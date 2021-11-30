@@ -15,7 +15,6 @@ class axi_ad9361 extends BlackBox(Map("ID" -> 1234,
     val ensmCtr_ = new ensmCtr
     val txMasterSlave_ = new txMasterSlave
     val tddSync_ = new tddSync
-    val delayClk_ = new delayClk
     val masterIF_ = new masterIF
     val dmaAdcIF_ = new dmaAdcIF
     val dmaDacIF_ = new dmaDacIF
@@ -32,7 +31,6 @@ class UseDut extends Module {
     val ensmCtr_ = new ensmCtr
     val txMasterSlave_ = new txMasterSlave
     val tddSync_ = new tddSync
-    val delayClk_ = new delayClk
     val masterIF_ = new masterIF
     val dmaAdcIF_ = new dmaAdcIF
     val dmaDacIF_ = new dmaDacIF
@@ -40,17 +38,22 @@ class UseDut extends Module {
   })
   val u0 = Module(new axi_ad9361)
   u0.io.rxLvdsIF_ :=  io.rxLvdsIF_
-  u0.io.rxCmosIF_ <>  io.rxCmosIF_
-  io.txLvdsIF_ <> u0.io.txLvdsIF_
-  u0.io.txCmosIF_ <>  io.txCmosIF_
-  u0.io.ensmCtr_ <>  io.ensmCtr_
-  u0.io.txMasterSlave_ <>  io.txMasterSlave_
-  u0.io.tddSync_ <>  io.tddSync_
-  u0.io.delayClk_ <>  io.delayClk_
-  u0.io.masterIF_ <>  io.masterIF_
-  u0.io.dmaAdcIF_ <>  io.dmaAdcIF_
-  u0.io.dmaDacIF_ <>  io.dmaDacIF_
-  u0.io.slaveAxiLiteIF_ <>  io.slaveAxiLiteIF_
+  u0.io.rxCmosIF_ :=  io.rxCmosIF_
+  io.txLvdsIF_ := u0.io.txLvdsIF_
+  io.txCmosIF_ := u0.io.txCmosIF_
+  io.ensmCtr_ := u0.io.ensmCtr_
+  u0.io.txMasterSlave_.in := io.txMasterSlave_.in
+  io.txMasterSlave_.out := u0.io.txMasterSlave_.out
+  u0.io.tddSync_.in := io.tddSync_.in
+  io.tddSync_.out := u0.io.tddSync_.out
+  u0.io.masterIF_.in :=  io.masterIF_.in
+  io.masterIF_.out := u0.io.masterIF_.out
+  u0.io.dmaAdcIF_.in := io.dmaAdcIF_.in
+  io.dmaAdcIF_.out := u0.io.dmaAdcIF_.out
+  u0.io.dmaDacIF_.in := io.dmaDacIF_.in
+  io.dmaDacIF_.out := u0.io.dmaDacIF_.out
+  u0.io.slaveAxiLiteIF_.in :=  io.slaveAxiLiteIF_.in
+  io.slaveAxiLiteIF_.out := u0.io.slaveAxiLiteIF_.out
 }
 
 object UseDutGen extends App {
