@@ -5,9 +5,42 @@ def IO_verilogToChisel():
 
     with open(fileName) as f:
         for line in f:
-            temp = line.replace(',', '').replace(']', '')
+            temp = line.replace('\n','').replace(',','').split('[')
+            temp_cat = ''
+            for element in temp:
+                if ']' in element:
+                    element = element.replace(' ','')
+                    element = element.replace(']', ' ')
+                temp_cat += element
+            temp = temp_cat.split(' ')
+            temp_list=[]
+            for element in temp:
+                if element != '':
+                    temp_list.append(element)
 
-            print(temp)
+            final_list=[]
+            for element in temp_list:
+                if ':' in element:
+                    vec_temp = element.split(':')
+                    element = int(vec_temp[0]) - int(vec_temp[1]) + 1
+                final_list.append(element)
+
+            output_string = 'val '
+            if len(final_list) == 2:
+                output_string += final_list[1] + ' = '
+                if final_list[0] == 'input':
+                    output_string += 'Input(Bool())' + '   //' + line
+                else:
+                    output_string += 'Output(Bool())' + '   //' + line
+            elif len(final_list) == 3:
+                output_string += final_list[2] + ' = '
+                if final_list[0] == 'input':
+                    output_string += 'Input(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
+                else:
+                    output_string += 'Input(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
+
+
+            print(output_string)
 
 
 
