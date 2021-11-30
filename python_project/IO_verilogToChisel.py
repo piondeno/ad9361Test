@@ -3,6 +3,8 @@ import re
 def IO_verilogToChisel():
     fileName = "verilogIO.txt"
 
+    outputList = []
+    inputList = []
     with open(fileName) as f:
         for line in f:
             temp = line.replace('\n','').replace(',','').split('[')
@@ -37,10 +39,17 @@ def IO_verilogToChisel():
                 if final_list[0] == 'input':
                     output_string += 'Input(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
                 else:
-                    output_string += 'Input(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
+                    output_string += 'Output(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
 
+            if final_list[0] == 'input':
+                inputList.append(output_string)
+            else:
+                outputList.append(output_string)
 
-            print(output_string)
+    for element in inputList:
+        print(element)
+    for element in outputList:
+        print(element)
 
 
 
