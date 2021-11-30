@@ -1,6 +1,4 @@
 module UseDut(
-  input         clock,
-  input         reset,
   input         io_rxLvdsIF__in_rx_clk_in_p,
   input         io_rxLvdsIF__in_rx_clk_in_n,
   input         io_rxLvdsIF__in_rx_frame_in_p,

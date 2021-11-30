@@ -1,7 +1,10 @@
-import re
+'''
+transfer the verilog IO define to chisel Bundle class
+'''
 
 def IO_verilogToChisel():
     fileName = "verilogIO.txt"
+    className = input('Please input the class name for Bundle : ')
 
     outputList = []
     inputList = []
@@ -46,12 +49,47 @@ def IO_verilogToChisel():
             else:
                 outputList.append(output_string)
 
-    for element in inputList:
-        print(element)
-    for element in outputList:
-        print(element)
+    if inputList != []:
+        print('class '+className+'_in extends Bundle {')
+        for element in inputList:
+            print(element.replace('\n',''))
+        print('}')
+    if outputList != []:
+        print('class ' + className + '_out extends Bundle {')
+        for element in outputList:
+            print(element.replace('\n',''))
+        print('}')
 
+    print('class '+className+' extends Bundle {')
+    if inputList != []:
+        print('val in = new '+className+'_in')
+    if outputList != []:
+        print('val out = new '+className+'_out')
+    print('}')
 
+'''
+Shrink the instantiate verilog port name for instantiate chisel blockbox module
+'''
+def shrinkPortNameForChiselBlockBox():
+    fileName = "portList.txt"
+
+    with open(fileName) as f:
+        for line in f:
+            line = line.replace('\n','')
+            if '__in_' in line:
+                temp = line.split('__in_')
+                cond_str = '__in_'
+            elif '__out_' in line:
+                temp = line.split('__out_')
+                cond_str = '__out_'
+            else:
+                print(line)
+                continue
+            firstElement = temp[0].split('.')
+            temp[1] = firstElement[0] + '.' + temp[1]
+            temp = temp[1] + cond_str + temp[2]
+            print(temp)
 
 if __name__ == '__main__':
-    IO_verilogToChisel()
+    #IO_verilogToChisel()
+    shrinkPortNameForChiselBlockBox()

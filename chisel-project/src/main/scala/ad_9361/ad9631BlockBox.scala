@@ -22,7 +22,7 @@ class axi_ad9361 extends BlackBox(Map("ID" -> 1234,
   })
 }
 
-class UseDut extends Module {
+class UseDut extends RawModule {
   val io = IO(new Bundle {
     val rxLvdsIF_ = new rxLvdsIF
     val rxCmosIF_ = new rxCmosIF
