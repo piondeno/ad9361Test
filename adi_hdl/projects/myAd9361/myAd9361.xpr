@@ -6,7 +6,7 @@
 <Project Version="7" Minor="55" Path="F:/projects/ad9361Test/adi_hdl/projects/myAd9361/myAd9361.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="37889f409c7b486f9842670d12f9d456"/>
+    <Option Name="Id" Val="d4a54397bbe44ef4a8f3ebe1af7751c9"/>
     <Option Name="Part" Val="xcvu9p-flga2104-2L-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -48,6 +48,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="6.2.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="6.2.0"/>
     <Option Name="BoardPart" Val="xilinx.com:vcu118:part0:2.4"/>
+    <Option Name="BoardPartRepoPaths" Val="C:/Users/worker/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -91,91 +92,78 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/xilinx/axi_ad9361_cmos_if.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/xilinx/axi_ad9361_cmos_if.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/xilinx/axi_ad9361_lvds_if.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/xilinx/axi_ad9361_cmos_if.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/xilinx/axi_ad9361_lvds_if.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_rx.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/xilinx/axi_ad9361_lvds_if.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_rx.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_rx_channel.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_rx.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_rx_channel.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_rx_pnmon.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_rx_channel.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_rx_pnmon.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_tdd.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_rx_pnmon.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tdd.v"/>
-          <Attr Name="ImportTime" Val="1638156804"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_tdd_if.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tdd.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tdd_if.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_tx.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tdd_if.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tx.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361_tx_channel.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tx.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tx_channel.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi_ad9361/axi_ad9361.v">
+      <File Path="$PPRDIR/../../library/axi_ad9361/axi_ad9361_tx_channel.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../library/axi_ad9361/axi_ad9361.v"/>
-          <Attr Name="ImportTime" Val="1638156705"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../chisel-project/generated/UseDut.v">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -183,7 +171,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="axi_ad9361"/>
+        <Option Name="TopModule" Val="UseDut"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -194,10 +182,9 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
-      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="axi_ad9361"/>
+        <Option Name="TopModule" Val="UseDut"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -236,18 +223,22 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcvu9p-flga2104-2L-e" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="D:/ADI/hdl/projects/myAd9361/myAd9361.srcs/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcvu9p-flga2104-2L-e" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcvu9p-flga2104-2L-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="D:/ADI/hdl/projects/myAd9361/myAd9361.srcs/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcvu9p-flga2104-2L-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
