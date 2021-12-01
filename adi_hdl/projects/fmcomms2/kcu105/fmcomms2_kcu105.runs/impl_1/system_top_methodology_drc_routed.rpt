@@ -1,0 +1,414 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Dec  1 00:04:39 2021
+| Host         : DESKTOP-6IT4G6N running 64-bit major release  (build 9200)
+| Command      : report_methodology -file system_top_methodology_drc_routed.rpt -pb system_top_methodology_drc_routed.pb -rpx system_top_methodology_drc_routed.rpx
+| Design       : system_top
+| Device       : xcku040-ffva1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_system_top
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 61
++-----------+----------+-----------------------------------------------------------+------------+
+| Rule      | Severity | Description                                               | Violations |
++-----------+----------+-----------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                              | 13         |
+| TIMING-9  | Warning  | Unknown CDC Logic                                         | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                          | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                             | 38         |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects               | 5          |
+| CLKC-8    | Advisory | BUFGCE_DIV with active CE or DIVIDE not 1 has BUFG driver | 2          |
+| CLKC-23   | Advisory | MMCME3 with ZHOLD drives sequential IO not with CLKOUT0   | 1          |
++-----------+----------+-----------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ddr_cntrl/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[0].gen_plle3.PLLE3_BASE_INST_OTHER_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ddr_cntrl/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[0].gen_plle3.PLLE3_BASE_INST_OTHER/RST,
+i_system_wrapper/system_i/axi_ddr_cntrl/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[1].gen_plle3.PLLE3_BASE_INST_OTHER/RST
+i_system_wrapper/system_i/axi_ddr_cntrl/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[2].gen_plle3.PLLE3_BASE_INST_OTHER/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/RESET2PCSPMA_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst0_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst1_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst2_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst3_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst4_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst0_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst1_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst2_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst3_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst4_reg/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_clocking_i/mmcme3_adv_inst/RST,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_resets_i/rst_dly_reg[0]/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_resets_i/rst_dly_reg[1]/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_resets_i/rst_dly_reg[2]/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_resets_i/rst_dly_reg[3]/PRE
+ (the first 15 of 17 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ethernet/inst/eth_buf/U0/COMBINE_RESETS/RESET2TEMACn_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst0_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst1_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst2_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst3_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst4_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_axi_rx_rstn_rx_clk/async_rst0_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_axi_rx_rstn_rx_clk/async_rst1_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_axi_rx_rstn_rx_clk/async_rst2_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_axi_rx_rstn_rx_clk/async_rst3_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_axi_rx_rstn_rx_clk/async_rst4_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_glbl_rstn_rx_clk/async_rst0_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_glbl_rstn_rx_clk/async_rst1_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_glbl_rstn_rx_clk/async_rst2_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_glbl_rstn_rx_clk/async_rst3_reg/CLR,
+i_system_wrapper/system_i/axi_ethernet/inst/mac/inst/bd_55cd_mac_0_core/sync_glbl_rstn_rx_clk/async_rst4_reg/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_resets_i/reset_sync1_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_10_to_1_ser8_i/reset_sync_inter_clk/reset_sync1/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_10_to_1_ser8_i/reset_sync_inter_clk/reset_sync2/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_10_to_1_ser8_i/reset_sync_inter_clk/reset_sync3/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_10_to_1_ser8_i/reset_sync_inter_clk/reset_sync4/PRE
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_10_to_1_ser8_i/reset_sync_inter_clk/reset_sync5/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/bd_55cd_pcs_pma_0_core/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MGT_RESET.RESET_INT_PIPE_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/bd_55cd_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_PIPE_reg/PRE
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/bd_55cd_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/reset_wtd_timer/reset_sync1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_rxclk_div4_1/reset_sync1/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_rxclk_div4_1/reset_sync2/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_rxclk_div4_1/reset_sync3/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_rxclk_div4_1/reset_sync4/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_rxclk_div4_1/reset_sync5/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_sync_rxclk_div4/reset_sync1/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_sync_rxclk_div4/reset_sync2/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_sync_rxclk_div4/reset_sync3/PRE,
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_sync_rxclk_div4/reset_sync4/PRE
+i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/pcs_pma_block_i/lvds_transceiver_mw/serdes_1_to_10_ser8_i/reset_sync_rxclk_div4/reset_sync5/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/sys_mb_debug/U0/MDM_Core_I1/JTAG_CONTROL_I/Use_BSCAN.FDC_I/Use_UART.execute_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/sys_mb_debug/U0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.execute_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/sys_mb_debug/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/sys_mb_debug/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on phy_rx_n relative to clock(s) phy_clk_p
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on phy_rx_p relative to clock(s) phy_clk_p
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_n[0] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_n[1] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_n[2] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_n[3] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_n[4] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_n[5] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_p[0] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_p[1] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_p[2] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_p[3] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_p[4] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on rx_data_in_p[5] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on rx_frame_in_n relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on rx_frame_in_p relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on sys_rst relative to clock(s) sys_clk_p
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on ddr4_reset_n relative to clock(s) sys_clk_p
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on enable relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on phy_tx_n relative to clock(s) phy_clk_p
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on phy_tx_p relative to clock(s) phy_clk_p
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on tx_clk_out_n relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on tx_clk_out_p relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_n[0] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_n[1] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_n[2] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_n[3] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_n[4] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_n[5] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_p[0] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_p[1] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_p[2] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_p[3] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_p[4] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on tx_data_out_p[5] relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on tx_frame_out_n relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on tx_frame_out_p relative to clock(s) rx_clk
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on txnrx relative to clock(s) rx_clk
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ */sync_mode_d1_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '116' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc (Line: 5)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '167' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc (Line: 159)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '168' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc (Line: 165)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '189' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc (Line: 123)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -quiet -hier *reset_sync_in_reg*/PRE -filter {NAME =~ *i_reset_manager*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '190' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc (Line: 129)
+Related violations: <none>
+
+CLKC-8#1 Advisory
+BUFGCE_DIV with active CE or DIVIDE not 1 has BUFG driver  
+The BUFGCE_DIV cell i_system_wrapper/system_i/util_ad9361_divclk/inst/clk_divide_sel_0 i_system_wrapper/system_i/util_ad9361_divclk/inst/clk_divide_sel_0/I pin (and CE is ACTIVE or BUFGCE_DIVIDE is not 1) is driven by BUFGCE clock buffer i_system_wrapper/system_i/axi_ad9361/inst/i_dev_if/i_clk/i_clk_gbuf. It should be reconnected in parallel to the driving clock buffer in order to reduce skew. Cascaded buffers introduce skew that can lead to difficult or impossible timing closure.
+Related violations: <none>
+
+CLKC-8#2 Advisory
+BUFGCE_DIV with active CE or DIVIDE not 1 has BUFG driver  
+The BUFGCE_DIV cell i_system_wrapper/system_i/util_ad9361_divclk/inst/clk_divide_sel_1 i_system_wrapper/system_i/util_ad9361_divclk/inst/clk_divide_sel_1/I pin (and CE is ACTIVE or BUFGCE_DIVIDE is not 1) is driven by BUFGCE clock buffer i_system_wrapper/system_i/axi_ad9361/inst/i_dev_if/i_clk/i_clk_gbuf. It should be reconnected in parallel to the driving clock buffer in order to reduce skew. Cascaded buffers introduce skew that can lead to difficult or impossible timing closure.
+Related violations: <none>
+
+CLKC-23#1 Advisory
+MMCME3 with ZHOLD drives sequential IO not with CLKOUT0  
+The MMCME3 cell i_system_wrapper/system_i/axi_ethernet/inst/pcs_pma/inst/core_clocking_i/mmcme3_adv_inst has COMPENSATION value ZHOLD, but CLKOUT2 output drives sequential IO cells. In order to achieve insertion delay and phase-alignment for the IO sequential cells, CLKOUT0 must be used.
+Related violations: <none>
+
+

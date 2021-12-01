@@ -39,6 +39,7 @@ module adrv9001_tx #(
   parameter CMOS_LVDS_N = 0,
   parameter NUM_LANES = 4,
   parameter FPGA_TECHNOLOGY = 0,
+  parameter USE_BUFG = 0,
   parameter USE_RX_CLK_FOR_TX = 0
 ) (
   input                   ref_clk,
@@ -64,6 +65,7 @@ module adrv9001_tx #(
   input                   rx_ssi_rst,
 
   // internal resets and clocks
+  output     [31:0]       dac_clk_ratio,
 
   input                   dac_rst,
   output                  dac_clk_div,
@@ -188,12 +190,27 @@ module adrv9001_tx #(
         .I (tx_dclk_in_s),
         .O (dac_clk_div_s));
 
-      BUFG I_bufg (
-        .I (dac_clk_div_s),
-        .O (dac_clk_div)
-      );
+      if (USE_BUFG == 1) begin
+        BUFG I_bufg (
+         .I (dac_clk_div_s),
+         .O (dac_clk_div)
+        );
+      end else begin
+        assign dac_clk_div = dac_clk_div_s;
+      end
 
-      assign ssi_rst = mssi_sync;
+      xpm_cdc_async_rst
+      # (
+         .DEST_SYNC_FF    (10), // DECIMAL; range: 2-10
+         .INIT_SYNC_FF    ( 0), // DECIMAL; 0=disable simulation init values, 1=enable simulation init values
+         .RST_ACTIVE_HIGH ( 1)  // DECIMAL; 0=active low reset, 1=active high reset
+        )
+      rst_syncro
+      (
+       .src_arst (mssi_sync  ),
+       .dest_clk (dac_clk_div),
+       .dest_arst(ssi_rst    )
+      );
 
     end else begin
 
@@ -239,5 +256,7 @@ module adrv9001_tx #(
   end
 
   endgenerate
+
+  assign dac_clk_ratio = 4;
 
 endmodule

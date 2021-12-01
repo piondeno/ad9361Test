@@ -1,0 +1,799 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 30 22:52:31 2021
+# Process ID: 33312
+# Current directory: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1
+# Command line: vivado.exe -log system_axi_cpu_interconnect_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_cpu_interconnect_0.tcl
+# Log file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1/system_axi_cpu_interconnect_0.vds
+# Journal file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_axi_cpu_interconnect_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/projects/adi_hdl/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/projects/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_/Vivado/2021.1/data/ip'.
+Command: synth_design -top system_axi_cpu_interconnect_0 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26536
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1307.773 ; gain = 166.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_axi_cpu_interconnect_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/synth/system_axi_cpu_interconnect_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1EHB1EN' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5259]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_one_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_0/synth/bd_24fc_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_one_0' (2#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_0/synth/bd_24fc_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_24fc_psr_aclk_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/synth/bd_24fc_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/synth/bd_24fc_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_24fc_psr_aclk_0' (9#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/synth/bd_24fc_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_24fc_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5366]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_24fc_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5366]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_24fc_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5366]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_24fc_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5366]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_24fc_psr_aclk_0' has 10 connections declared, but only 6 given [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5366]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1EHB1EN' (10#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5259]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_LFNOJO' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5671]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_32/synth/bd_24fc_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (11#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00e_0' (18#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_32/synth/bd_24fc_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_LFNOJO' (19#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5671]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_869RMW' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5972]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_27/synth/bd_24fc_m00arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00arn_0' (29#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_27/synth/bd_24fc_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_29/synth/bd_24fc_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00awn_0' (30#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_29/synth/bd_24fc_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_31/synth/bd_24fc_m00bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00bn_0' (31#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_31/synth/bd_24fc_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_28/synth/bd_24fc_m00rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00rn_0' (32#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_28/synth/bd_24fc_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_30/synth/bd_24fc_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00wn_0' (33#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_30/synth/bd_24fc_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_869RMW' (34#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5972]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m00s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_26/synth/bd_24fc_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m00s2a_0' (36#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_26/synth/bd_24fc_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_P32QX0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:6268]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_39/synth/bd_24fc_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01e_0' (37#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_39/synth/bd_24fc_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_P32QX0' (38#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:6268]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_ZNBPZY' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:6569]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_34/synth/bd_24fc_m01arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01arn_0' (39#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_34/synth/bd_24fc_m01arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_36/synth/bd_24fc_m01awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01awn_0' (40#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_36/synth/bd_24fc_m01awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_38/synth/bd_24fc_m01bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01bn_0' (41#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_38/synth/bd_24fc_m01bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_35/synth/bd_24fc_m01rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01rn_0' (42#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_35/synth/bd_24fc_m01rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_37/synth/bd_24fc_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01wn_0' (43#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_37/synth/bd_24fc_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_ZNBPZY' (44#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:6569]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m01s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_33/synth/bd_24fc_m01s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m01s2a_0' (45#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_33/synth/bd_24fc_m01s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_RHIXDW' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:6865]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_46/synth/bd_24fc_m02e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02e_0' (46#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_46/synth/bd_24fc_m02e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_RHIXDW' (47#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:6865]
+INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_1XY7RT1' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:7166]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_41/synth/bd_24fc_m02arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02arn_0' (48#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_41/synth/bd_24fc_m02arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_43/synth/bd_24fc_m02awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02awn_0' (49#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_43/synth/bd_24fc_m02awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_45/synth/bd_24fc_m02bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02bn_0' (50#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_45/synth/bd_24fc_m02bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_42/synth/bd_24fc_m02rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02rn_0' (51#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_42/synth/bd_24fc_m02rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_44/synth/bd_24fc_m02wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02wn_0' (52#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_44/synth/bd_24fc_m02wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_1XY7RT1' (53#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:7166]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m02s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_40/synth/bd_24fc_m02s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m02s2a_0' (54#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_40/synth/bd_24fc_m02s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm03_exit_pipeline_imp_W8VNT0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:7462]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_53/synth/bd_24fc_m03e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03e_0' (55#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_53/synth/bd_24fc_m03e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm03_exit_pipeline_imp_W8VNT0' (56#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:7462]
+INFO: [Synth 8-6157] synthesizing module 'm03_nodes_imp_QXQ41F' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:7763]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_48/synth/bd_24fc_m03arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03arn_0' (57#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_48/synth/bd_24fc_m03arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_50/synth/bd_24fc_m03awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03awn_0' (58#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_50/synth/bd_24fc_m03awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_52/synth/bd_24fc_m03bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03bn_0' (59#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_52/synth/bd_24fc_m03bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_49/synth/bd_24fc_m03rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03rn_0' (60#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_49/synth/bd_24fc_m03rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_51/synth/bd_24fc_m03wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03wn_0' (61#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_51/synth/bd_24fc_m03wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm03_nodes_imp_QXQ41F' (62#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:7763]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m03s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_47/synth/bd_24fc_m03s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m03s2a_0' (63#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_47/synth/bd_24fc_m03s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm04_exit_pipeline_imp_4YLDZ8' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8059]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_60/synth/bd_24fc_m04e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04e_0' (64#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_60/synth/bd_24fc_m04e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm04_exit_pipeline_imp_4YLDZ8' (65#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8059]
+INFO: [Synth 8-6157] synthesizing module 'm04_nodes_imp_1CFNLF' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8360]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_55/synth/bd_24fc_m04arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04arn_0' (66#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_55/synth/bd_24fc_m04arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_57/synth/bd_24fc_m04awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04awn_0' (67#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_57/synth/bd_24fc_m04awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_59/synth/bd_24fc_m04bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04bn_0' (68#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_59/synth/bd_24fc_m04bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_56/synth/bd_24fc_m04rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04rn_0' (69#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_56/synth/bd_24fc_m04rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_58/synth/bd_24fc_m04wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04wn_0' (70#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_58/synth/bd_24fc_m04wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm04_nodes_imp_1CFNLF' (71#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8360]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m04s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_54/synth/bd_24fc_m04s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m04s2a_0' (72#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_54/synth/bd_24fc_m04s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm05_exit_pipeline_imp_1VSATG' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8656]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_67/synth/bd_24fc_m05e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05e_0' (73#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_67/synth/bd_24fc_m05e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm05_exit_pipeline_imp_1VSATG' (74#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8656]
+INFO: [Synth 8-6157] synthesizing module 'm05_nodes_imp_16ONGP1' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8957]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_62/synth/bd_24fc_m05arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05arn_0' (75#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_62/synth/bd_24fc_m05arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_64/synth/bd_24fc_m05awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05awn_0' (76#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_64/synth/bd_24fc_m05awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_66/synth/bd_24fc_m05bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05bn_0' (77#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_66/synth/bd_24fc_m05bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_63/synth/bd_24fc_m05rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05rn_0' (78#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_63/synth/bd_24fc_m05rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_65/synth/bd_24fc_m05wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05wn_0' (79#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_65/synth/bd_24fc_m05wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm05_nodes_imp_16ONGP1' (80#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:8957]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m05s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_61/synth/bd_24fc_m05s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m05s2a_0' (81#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_61/synth/bd_24fc_m05s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm06_exit_pipeline_imp_HO8AYS' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:9253]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_74/synth/bd_24fc_m06e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06e_0' (82#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_74/synth/bd_24fc_m06e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm06_exit_pipeline_imp_HO8AYS' (83#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:9253]
+INFO: [Synth 8-6157] synthesizing module 'm06_nodes_imp_1RQKVBY' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:9554]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_69/synth/bd_24fc_m06arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06arn_0' (84#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_69/synth/bd_24fc_m06arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_71/synth/bd_24fc_m06awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06awn_0' (85#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_71/synth/bd_24fc_m06awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_73/synth/bd_24fc_m06bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06bn_0' (86#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_73/synth/bd_24fc_m06bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_70/synth/bd_24fc_m06rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06rn_0' (87#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_70/synth/bd_24fc_m06rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_72/synth/bd_24fc_m06wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06wn_0' (88#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_72/synth/bd_24fc_m06wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm06_nodes_imp_1RQKVBY' (89#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:9554]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m06s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_68/synth/bd_24fc_m06s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m06s2a_0' (90#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_68/synth/bd_24fc_m06s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm07_exit_pipeline_imp_B9JDQC' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:9850]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_81/synth/bd_24fc_m07e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07e_0' (91#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_81/synth/bd_24fc_m07e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm07_exit_pipeline_imp_B9JDQC' (92#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:9850]
+INFO: [Synth 8-6157] synthesizing module 'm07_nodes_imp_XHUCQ0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10151]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_76/synth/bd_24fc_m07arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07arn_0' (93#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_76/synth/bd_24fc_m07arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_78/synth/bd_24fc_m07awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07awn_0' (94#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_78/synth/bd_24fc_m07awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_80/synth/bd_24fc_m07bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07bn_0' (95#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_80/synth/bd_24fc_m07bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_77/synth/bd_24fc_m07rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07rn_0' (96#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_77/synth/bd_24fc_m07rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_79/synth/bd_24fc_m07wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07wn_0' (97#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_79/synth/bd_24fc_m07wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm07_nodes_imp_XHUCQ0' (98#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10151]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m07s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_75/synth/bd_24fc_m07s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m07s2a_0' (99#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_75/synth/bd_24fc_m07s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm08_exit_pipeline_imp_1VPDZB8' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10447]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_88/synth/bd_24fc_m08e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08e_0' (100#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_88/synth/bd_24fc_m08e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm08_exit_pipeline_imp_1VPDZB8' (101#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10447]
+INFO: [Synth 8-6157] synthesizing module 'm08_nodes_imp_CT87BY' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10748]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_83/synth/bd_24fc_m08arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08arn_0' (102#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_83/synth/bd_24fc_m08arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_85/synth/bd_24fc_m08awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08awn_0' (103#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_85/synth/bd_24fc_m08awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_87/synth/bd_24fc_m08bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08bn_0' (104#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_87/synth/bd_24fc_m08bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_84/synth/bd_24fc_m08rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08rn_0' (105#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_84/synth/bd_24fc_m08rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_86/synth/bd_24fc_m08wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08wn_0' (106#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_86/synth/bd_24fc_m08wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm08_nodes_imp_CT87BY' (107#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10748]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m08s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_82/synth/bd_24fc_m08s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m08s2a_0' (108#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_82/synth/bd_24fc_m08s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm09_exit_pipeline_imp_1R15MF8' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11044]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_95/synth/bd_24fc_m09e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09e_0' (109#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_95/synth/bd_24fc_m09e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm09_exit_pipeline_imp_1R15MF8' (110#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11044]
+INFO: [Synth 8-6157] synthesizing module 'm09_nodes_imp_1DPCORS' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11345]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_90/synth/bd_24fc_m09arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09arn_0' (111#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_90/synth/bd_24fc_m09arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_92/synth/bd_24fc_m09awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09awn_0' (112#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_92/synth/bd_24fc_m09awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_94/synth/bd_24fc_m09bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09bn_0' (113#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_94/synth/bd_24fc_m09bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_91/synth/bd_24fc_m09rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09rn_0' (114#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_91/synth/bd_24fc_m09rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_93/synth/bd_24fc_m09wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09wn_0' (115#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_93/synth/bd_24fc_m09wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm09_nodes_imp_1DPCORS' (116#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11345]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m09s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_89/synth/bd_24fc_m09s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m09s2a_0' (117#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_89/synth/bd_24fc_m09s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm10_exit_pipeline_imp_1NFL7TC' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11641]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_102/synth/bd_24fc_m10e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10e_0' (118#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_102/synth/bd_24fc_m10e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm10_exit_pipeline_imp_1NFL7TC' (119#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11641]
+INFO: [Synth 8-6157] synthesizing module 'm10_nodes_imp_19NOVR4' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11942]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_97/synth/bd_24fc_m10arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10arn_0' (120#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_97/synth/bd_24fc_m10arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_99/synth/bd_24fc_m10awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10awn_0' (121#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_99/synth/bd_24fc_m10awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_101/synth/bd_24fc_m10bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10bn_0' (122#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_101/synth/bd_24fc_m10bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_98/synth/bd_24fc_m10rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10rn_0' (123#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_98/synth/bd_24fc_m10rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_100/synth/bd_24fc_m10wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10wn_0' (124#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_100/synth/bd_24fc_m10wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm10_nodes_imp_19NOVR4' (125#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:11942]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m10s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_96/synth/bd_24fc_m10s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m10s2a_0' (126#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_96/synth/bd_24fc_m10s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm11_exit_pipeline_imp_1HKVTW0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:12238]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_109/synth/bd_24fc_m11e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11e_0' (127#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_109/synth/bd_24fc_m11e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm11_exit_pipeline_imp_1HKVTW0' (128#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:12238]
+INFO: [Synth 8-6157] synthesizing module 'm11_nodes_imp_FYFAGM' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:12539]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_104/synth/bd_24fc_m11arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11arn_0' (129#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_104/synth/bd_24fc_m11arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_106/synth/bd_24fc_m11awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11awn_0' (130#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_106/synth/bd_24fc_m11awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_108/synth/bd_24fc_m11bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11bn_0' (131#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_108/synth/bd_24fc_m11bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_105/synth/bd_24fc_m11rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11rn_0' (132#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_105/synth/bd_24fc_m11rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_107/synth/bd_24fc_m11wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11wn_0' (133#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_107/synth/bd_24fc_m11wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm11_nodes_imp_FYFAGM' (134#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:12539]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m11s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_103/synth/bd_24fc_m11s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m11s2a_0' (135#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_103/synth/bd_24fc_m11s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm12_exit_pipeline_imp_1WX380G' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:12835]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12e_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_116/synth/bd_24fc_m12e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12e_0' (136#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_116/synth/bd_24fc_m12e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm12_exit_pipeline_imp_1WX380G' (137#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:12835]
+INFO: [Synth 8-6157] synthesizing module 'm12_nodes_imp_JDZPM5' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13136]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12arn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_111/synth/bd_24fc_m12arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12arn_0' (138#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_111/synth/bd_24fc_m12arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12awn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_113/synth/bd_24fc_m12awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12awn_0' (139#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_113/synth/bd_24fc_m12awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12bn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_115/synth/bd_24fc_m12bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12bn_0' (140#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_115/synth/bd_24fc_m12bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12rn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_112/synth/bd_24fc_m12rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12rn_0' (141#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_112/synth/bd_24fc_m12rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12wn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_114/synth/bd_24fc_m12wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12wn_0' (142#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_114/synth/bd_24fc_m12wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm12_nodes_imp_JDZPM5' (143#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13136]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_m12s2a_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_110/synth/bd_24fc_m12s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_m12s2a_0' (144#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_110/synth/bd_24fc_m12s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_s00a2s_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_20/synth/bd_24fc_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_s00a2s_0' (146#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_20/synth/bd_24fc_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1L9SD8N' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13432]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_s00mmu_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_17/synth/bd_24fc_s00mmu_0.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_s00mmu_0' (151#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_17/synth/bd_24fc_s00mmu_0.sv:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_s00sic_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_19/synth/bd_24fc_s00sic_0.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_s00sic_0' (154#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_19/synth/bd_24fc_s00sic_0.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_s00tr_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_18/synth/bd_24fc_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_s00tr_0' (157#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_18/synth/bd_24fc_s00tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_24fc_s00tr_0' is unconnected for instance 's00_transaction_regulator' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13890]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_24fc_s00tr_0' is unconnected for instance 's00_transaction_regulator' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13890]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_24fc_s00tr_0' has 82 connections declared, but only 80 given [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13890]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1L9SD8N' (158#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13432]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1OZNCIL' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13973]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_sarn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_21/synth/bd_24fc_sarn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_sarn_0' (159#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_21/synth/bd_24fc_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_sawn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_23/synth/bd_24fc_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_sawn_0' (160#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_23/synth/bd_24fc_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_sbn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_25/synth/bd_24fc_sbn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_sbn_0' (161#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_25/synth/bd_24fc_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_srn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_22/synth/bd_24fc_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_srn_0' (162#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_22/synth/bd_24fc_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_swn_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_24/synth/bd_24fc_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_swn_0' (163#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_24/synth/bd_24fc_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1OZNCIL' (164#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:13973]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1CVK6X5' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:14269]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_arinsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_2/synth/bd_24fc_arinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_arinsw_0' (167#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_2/synth/bd_24fc_arinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_aroutsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_7/synth/bd_24fc_aroutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_aroutsw_0' (168#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_7/synth/bd_24fc_aroutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_awinsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_4/synth/bd_24fc_awinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_awinsw_0' (169#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_4/synth/bd_24fc_awinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_awoutsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_9/synth/bd_24fc_awoutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_awoutsw_0' (170#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_9/synth/bd_24fc_awoutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_binsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_6/synth/bd_24fc_binsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_binsw_0' (171#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_6/synth/bd_24fc_binsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_boutsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_11/synth/bd_24fc_boutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_boutsw_0' (172#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_11/synth/bd_24fc_boutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_W6QN1T' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5375]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_arni_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_12/synth/bd_24fc_arni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_arni_0' (177#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_12/synth/bd_24fc_arni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_awni_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_14/synth/bd_24fc_awni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_awni_0' (178#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_14/synth/bd_24fc_awni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_bni_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_16/synth/bd_24fc_bni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_bni_0' (181#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_16/synth/bd_24fc_bni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_rni_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_13/synth/bd_24fc_rni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_rni_0' (182#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_13/synth/bd_24fc_rni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_wni_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_15/synth/bd_24fc_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_wni_0' (183#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_15/synth/bd_24fc_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_W6QN1T' (184#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:5375]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_rinsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_3/synth/bd_24fc_rinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_rinsw_0' (185#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_3/synth/bd_24fc_rinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_routsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_8/synth/bd_24fc_routsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_routsw_0' (186#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_8/synth/bd_24fc_routsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_winsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_5/synth/bd_24fc_winsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_winsw_0' (187#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_5/synth/bd_24fc_winsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_24fc_woutsw_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_10/synth/bd_24fc_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc_woutsw_0' (188#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_10/synth/bd_24fc_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1CVK6X5' (189#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:14269]
+INFO: [Synth 8-6155] done synthesizing module 'bd_24fc' (190#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/synth/bd_24fc.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_cpu_interconnect_0' (191#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/synth/system_axi_cpu_interconnect_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1645.473 ; gain = 504.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1667.355 ; gain = 525.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1667.355 ; gain = 525.914
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2180.703 ; gain = 33.105
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/bd_24fc_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/bd_24fc_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/bd_24fc_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_cpu_interconnect_0/bd_0/ip/ip_1/bd_24fc_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-1714] 166 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2613.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.952 . Memory (MB): peak = 2635.824 ; gain = 22.648
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1/dont_touch.xdc, line 567).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_nodes/m04_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_nodes/m05_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_nodes/m06_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_nodes/m07_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_nodes/m08_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_nodes/m09_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_nodes/m10_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_nodes/m11_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_nodes/m12_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_exit_pipeline/m01_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_exit_pipeline/m02_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_exit_pipeline/m03_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m04_exit_pipeline/m04_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m05_exit_pipeline/m05_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m06_exit_pipeline/m06_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m07_exit_pipeline/m07_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m08_exit_pipeline/m08_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m09_exit_pipeline/m09_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m10_exit_pipeline/m10_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m11_exit_pipeline/m11_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m12_exit_pipeline/m12_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 75    
+	   2 Input    2 Bit       Adders := 26    
+	   3 Input    1 Bit       Adders := 30    
+	   2 Input    1 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 284   
++---Registers : 
+	             2178 Bit    Registers := 2     
+	              188 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               77 Bit    Registers := 1     
+	               47 Bit    Registers := 13    
+	               33 Bit    Registers := 13    
+	               31 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 101   
+	                3 Bit    Registers := 169   
+	                2 Bit    Registers := 69    
+	                1 Bit    Registers := 819   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 2     
+	   2 Input  158 Bit        Muxes := 28    
+	   2 Input   66 Bit        Muxes := 14    
+	   2 Input   56 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   7 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 10    
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 108   
+	   2 Input    1 Bit        Muxes := 237   
+	   5 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:47 ; elapsed = 00:02:51 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:57 ; elapsed = 00:03:02 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:09 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:10 ; elapsed = 00:03:18 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:15 ; elapsed = 00:03:23 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:15 ; elapsed = 00:03:23 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:17 ; elapsed = 00:03:24 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:17 ; elapsed = 00:03:24 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:17 ; elapsed = 00:03:25 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:17 ; elapsed = 00:03:25 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |   460|
+|2     |LUT2  |   246|
+|3     |LUT3  |   253|
+|4     |LUT4  |   139|
+|5     |LUT5  |   127|
+|6     |LUT6  |   341|
+|7     |MUXF7 |    72|
+|8     |MUXF8 |    36|
+|9     |SRL16 |     1|
+|10    |FDCE  |   498|
+|11    |FDR   |     4|
+|12    |FDRE  |   593|
+|13    |FDSE  |   111|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:17 ; elapsed = 00:03:25 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:18 . Memory (MB): peak = 2635.824 ; gain = 525.914
+Synthesis Optimization Complete : Time (s): cpu = 00:03:17 ; elapsed = 00:03:25 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2635.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2635.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDR => FDRE: 4 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: b17fdc33
+INFO: [Common 17-83] Releasing license: Synthesis
+350 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:36 ; elapsed = 00:03:45 . Memory (MB): peak = 2635.824 ; gain = 1494.383
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1/system_axi_cpu_interconnect_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_axi_cpu_interconnect_0, cache-ID = e089b4ec335faf69
+INFO: [Coretcl 2-1174] Renamed 576 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1/system_axi_cpu_interconnect_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_axi_cpu_interconnect_0_utilization_synth.rpt -pb system_axi_cpu_interconnect_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 30 22:56:55 2021...

@@ -52,10 +52,12 @@ module system_top (
   inout               pmod0_d5,
   inout               pmod0_d6,
   inout               pmod0_d7,
-  output              gpio_0_exp_n, //CS
+  output              gpio_0_exp_n, //CS0n
   output              gpio_0_exp_p, //MOSI
   input               gpio_1_exp_n, //MISO
   output              gpio_1_exp_p, //SCK
+  output              gpio_2_exp_n, //CS2n
+  output              gpio_2_exp_p, //CS2p
   output              led_gpio_0,
   output              led_gpio_1,
   output              led_gpio_2,
@@ -226,11 +228,13 @@ module system_top (
 
   wire            ref_clk_a;
   wire            core_clk_a;
+  wire            core_clk_a_ds;
   wire            rx_sync_rx;
   wire            tx_sync_a;
   wire            sysref_a;
   wire            ref_clk_b;
   wire            core_clk_b;
+  wire            core_clk_b_ds;
   wire            rx_sync_obs;
   wire            rx_os_sync_b;
   wire            tx_sync_b;
@@ -249,6 +253,8 @@ module system_top (
       3'h2: spi_3_to_8_csn = 8'b11111011;
       3'h3: spi_3_to_8_csn = 8'b11110111;
       3'h4: spi_3_to_8_csn = 8'b11101111;
+      3'h5: spi_3_to_8_csn = 8'b11011111;
+      3'h6: spi_3_to_8_csn = 8'b10111111;
       default: spi_3_to_8_csn = 8'b11111111;
     endcase
   end
@@ -261,6 +267,8 @@ module system_top (
   assign gpio_1_exp_p = spi_clk;
   assign gpio_0_exp_p = spi_3_to_8_csn[4] == 1'b0 ?  spi_mosi : 1'bZ;
   assign spi_miso_s = spi_3_to_8_csn[4] == 1'b0 ? gpio_1_exp_n : spi_miso;
+  assign gpio_2_exp_n = spi_3_to_8_csn[5];
+  assign gpio_2_exp_p = spi_3_to_8_csn[6];
 
   adrv9009zu11eg_spi i_spi (
   .spi_csn(spi_3_to_8_csn),
@@ -345,10 +353,10 @@ module system_top (
     .dio_i ({gpio_o[27:22]}),
     .dio_o ({gpio_i[27:22]}),
     .dio_p ({
-              hmc7044_car_gpio_3, // 27
-              hmc7044_car_gpio_2, // 26
-              hmc7044_car_gpio_1, // 25
-              hmc7044_car_gpio_0, // 24
+              hmc7044_car_gpio_4, // 27
+              hmc7044_car_gpio_3, // 26
+              hmc7044_car_gpio_2, // 25
+              hmc7044_car_gpio_1, // 24
               hmc7044_car_reset,  // 23
               resetb_ad9545}));   // 22
 
@@ -402,15 +410,23 @@ module system_top (
     .IB (sysref_b_n),
     .O (sysref_b));
 
-  IBUFGDS i_rx_clk_ibufg_1 (
+  IBUFDS i_rx_clk_ibuf_1 (
     .I (core_clk_a_p),
     .IB (core_clk_a_n),
-    .O (core_clk_a));
-
-  IBUFGDS i_rx_clk_ibufg_2 (
+    .O (core_clk_a_ds));
+ 
+  BUFG i_clk_bufg_1 (
+     .I (core_clk_a_ds),
+     .O (core_clk_a));
+   
+  IBUFDS i_rx_clk_ibuf_2 (
     .I (core_clk_b_p),
     .IB (core_clk_b_n),
-    .O (core_clk_b));
+    .O (core_clk_b_ds));
+
+  BUFG i_clk_bufg_2 (
+     .I (core_clk_b_ds),
+     .O (core_clk_b));
 
   IBUFDS i_ibufds_tx_sync_1 (
     .I (tx_sync_a_p),

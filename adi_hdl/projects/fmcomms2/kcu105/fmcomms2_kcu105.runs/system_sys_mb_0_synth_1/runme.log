@@ -1,0 +1,651 @@
+
+*** Running vivado
+    with args -log system_sys_mb_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_sys_mb_0.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source system_sys_mb_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/projects/adi_hdl/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/projects/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_/Vivado/2021.1/data/ip'.
+Command: synth_design -top system_sys_mb_0 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22576
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1269.109 ; gain = 132.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_sys_mb_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/synth/system_sys_mb_0.vhd:190]
+	Parameter C_SCO bound to: 0 - type: integer 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_IRQ bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_DEBUG bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_CLK bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_TRACE_CLK bound to: 2 - type: integer 
+	Parameter C_FAULT_TOLERANT bound to: 0 - type: integer 
+	Parameter C_ECC_USE_CE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_SLAVE bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_MASTER bound to: 0 - type: integer 
+	Parameter C_ENDIANNESS bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTR_SIZE bound to: 32 - type: integer 
+	Parameter C_IADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_PIADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTANCE bound to: system_sys_mb_0 - type: string 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_AREA_OPTIMIZED bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_DP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_D_BUS_EXCEPTION bound to: 1 - type: integer 
+	Parameter C_M_AXI_IP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_I_BUS_EXCEPTION bound to: 1 - type: integer 
+	Parameter C_D_LMB bound to: 1 - type: integer 
+	Parameter C_D_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_D_AXI bound to: 1 - type: integer 
+	Parameter C_I_LMB bound to: 1 - type: integer 
+	Parameter C_I_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_I_AXI bound to: 0 - type: integer 
+	Parameter G_TEMPLATE_LIST bound to: 4 - type: integer 
+	Parameter C_USE_MSR_INSTR bound to: 1 - type: integer 
+	Parameter C_USE_PCMP_INSTR bound to: 1 - type: integer 
+	Parameter C_USE_BARREL bound to: 1 - type: integer 
+	Parameter C_USE_DIV bound to: 1 - type: integer 
+	Parameter C_USE_HW_MUL bound to: 2 - type: integer 
+	Parameter C_USE_FPU bound to: 0 - type: integer 
+	Parameter C_USE_REORDER_INSTR bound to: 1 - type: integer 
+	Parameter C_UNALIGNED_EXCEPTIONS bound to: 1 - type: integer 
+	Parameter C_ILL_OPCODE_EXCEPTION bound to: 1 - type: integer 
+	Parameter C_DIV_ZERO_EXCEPTION bound to: 1 - type: integer 
+	Parameter C_FPU_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FSL_LINKS bound to: 0 - type: integer 
+	Parameter C_USE_EXTENDED_FSL_INSTR bound to: 0 - type: integer 
+	Parameter C_FSL_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_USE_STACK_PROTECTION bound to: 0 - type: integer 
+	Parameter C_IMPRECISE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_USE_INTERRUPT bound to: 1 - type: integer 
+	Parameter C_USE_EXT_BRK bound to: 0 - type: integer 
+	Parameter C_USE_EXT_NM_BRK bound to: 0 - type: integer 
+	Parameter C_USE_NON_SECURE bound to: 0 - type: integer 
+	Parameter C_USE_MMU bound to: 3 - type: integer 
+	Parameter C_MMU_DTLB_SIZE bound to: 4 - type: integer 
+	Parameter C_MMU_ITLB_SIZE bound to: 2 - type: integer 
+	Parameter C_MMU_TLB_ACCESS bound to: 3 - type: integer 
+	Parameter C_MMU_ZONES bound to: 2 - type: integer 
+	Parameter C_MMU_PRIVILEGED_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BRANCH_TARGET_CACHE bound to: 0 - type: integer 
+	Parameter C_BRANCH_TARGET_CACHE_SIZE bound to: 0 - type: integer 
+	Parameter C_PC_WIDTH bound to: 32 - type: integer 
+	Parameter C_PVR bound to: 2 - type: integer 
+	Parameter C_PVR_USER1 bound to: 8'b00000000 
+	Parameter C_PVR_USER2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_DYNAMIC_BUS_SIZING bound to: 0 - type: integer 
+	Parameter C_RESET_MSR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_OPCODE_0x0_ILLEGAL bound to: 1 - type: integer 
+	Parameter C_DEBUG_ENABLED bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_PC_BRK bound to: 1 - type: integer 
+	Parameter C_NUMBER_OF_RD_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_WR_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_DEBUG_EVENT_COUNTERS bound to: 5 - type: integer 
+	Parameter C_DEBUG_LATENCY_COUNTERS bound to: 1 - type: integer 
+	Parameter C_DEBUG_COUNTER_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEBUG_TRACE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DEBUG_EXTERNAL_TRACE bound to: 0 - type: integer 
+	Parameter C_DEBUG_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_DEBUG_PROFILE_SIZE bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_IS_EDGE bound to: 0 - type: integer 
+	Parameter C_EDGE_IS_POSITIVE bound to: 1 - type: integer 
+	Parameter C_ASYNC_INTERRUPT bound to: 1 - type: integer 
+	Parameter C_ASYNC_WAKEUP bound to: 3 - type: integer 
+	Parameter C_M0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ICACHE_BASEADDR bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_ICACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000011111111111111111111111111111111 
+	Parameter C_USE_ICACHE bound to: 1 - type: integer 
+	Parameter C_ALLOW_ICACHE_WR bound to: 1 - type: integer 
+	Parameter C_ADDR_TAG_BITS bound to: 17 - type: integer 
+	Parameter C_CACHE_BYTE_SIZE bound to: 16384 - type: integer 
+	Parameter C_ICACHE_LINE_LEN bound to: 8 - type: integer 
+	Parameter C_ICACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_ICACHE_STREAMS bound to: 1 - type: integer 
+	Parameter C_ICACHE_VICTIMS bound to: 8 - type: integer 
+	Parameter C_ICACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_ICACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_IC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_IC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DCACHE_BASEADDR bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_DCACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000011111111111111111111111111111111 
+	Parameter C_USE_DCACHE bound to: 1 - type: integer 
+	Parameter C_ALLOW_DCACHE_WR bound to: 1 - type: integer 
+	Parameter C_DCACHE_ADDR_TAG bound to: 17 - type: integer 
+	Parameter C_DCACHE_BYTE_SIZE bound to: 16384 - type: integer 
+	Parameter C_DCACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_DCACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_DCACHE_USE_WRITEBACK bound to: 0 - type: integer 
+	Parameter C_DCACHE_VICTIMS bound to: 8 - type: integer 
+	Parameter C_DCACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_DCACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_DC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'd:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/774d/hdl/microblaze_v11_0_vh_rfs.vhd:164683' bound to instance 'U0' of component 'MicroBlaze' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/synth/system_sys_mb_0.vhd:970]
+INFO: [Synth 8-256] done synthesizing module 'system_sys_mb_0' (76#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/synth/system_sys_mb_0.vhd:190]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1585.316 ; gain = 448.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1585.316 ; gain = 448.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1585.316 ; gain = 448.434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.501 . Memory (MB): peak = 1585.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1121 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0_ooc_debug.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0_ooc_debug.xdc] for cell 'U0'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_sys_mb_0/system_sys_mb_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_sys_mb_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_sys_mb_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1625.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 768 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  FDR => FDRE: 162 instances
+  FDS => FDSE: 1 instance 
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  MULT_AND => LUT2: 1 instance 
+  MUXCY_L => MUXCY: 472 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.607 . Memory (MB): peak = 1627.402 ; gain = 2.164
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1627.402 ; gain = 490.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1627.402 ; gain = 490.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1627.402 ; gain = 490.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 'Icache'
+INFO: [Synth 8-802] inferred FSM for state register 'Using_Victim_Cache.victim_state_reg' in module 'Icache'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'MMU_UTLB'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+     stream_wait_on_idle |                              001 |                             0001
+        read_from_stream |                              010 |                             0010
+     victim_wait_on_idle |                              011 |                             0011
+       handle_victim_hit |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cache_state_reg' using encoding 'sequential' in module 'Icache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+            wait_on_idle |                               01 |                               01
+         write_to_victim |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Using_Victim_Cache.victim_state_reg' using encoding 'sequential' in module 'Icache'
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "MMU_UTLB_RAM:/RAM_reg"
+INFO: [Synth 8-3971] The signal "MMU_UTLB_RAM:/RAM_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           directcompare |                            00001 |                            00000
+             searchstart |                            01011 |                            00010
+                  search |                            00101 |                            00011
+                   found |                            00110 |                            00101
+               founddone |                            00111 |                            00110
+                notfound |                            01000 |                            00111
+                 writelo |                            00000 |                            01110
+            writehicheck |                            01111 |                            01000
+                 writehi |                            10000 |                            01001
+           writehiinvala |                            01110 |                            01011
+           writehiinvalb |                            00011 |                            01100
+          writehidirecta |                            00100 |                            01010
+          writehidirectb |                            00010 |                            01101
+                  readhi |                            01100 |                            10000
+                  readlo |                            01001 |                            10001
+                  iSTATE |                            01010 |                            11111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'MMU_UTLB'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1627.402 ; gain = 490.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 10    
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 315   
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	             4096 Bit    Registers := 1     
+	               47 Bit    Registers := 3     
+	               36 Bit    Registers := 11    
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 47    
+	               30 Bit    Registers := 1     
+	               27 Bit    Registers := 6     
+	               26 Bit    Registers := 5     
+	               25 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               22 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 2     
+	               14 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 20    
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 41    
+	                1 Bit    Registers := 511   
++---RAMs : 
+	              18K Bit	(512 X 36 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input   47 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 33    
+	   4 Input   32 Bit        Muxes := 6     
+	   2 Input   28 Bit        Muxes := 1     
+	   4 Input   27 Bit        Muxes := 4     
+	   2 Input   27 Bit        Muxes := 4     
+	   2 Input   26 Bit        Muxes := 4     
+	   4 Input   26 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 10    
+	   3 Input   14 Bit        Muxes := 1     
+	   8 Input   14 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 13    
+	   4 Input    8 Bit        Muxes := 2     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 9     
+	   4 Input    6 Bit        Muxes := 1     
+	  14 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 7     
+	  25 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   7 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 20    
+	   5 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 39    
+	   3 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	  16 Input    2 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 18    
+	   2 Input    1 Bit        Muxes := 498   
+	   4 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 15    
+	   6 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 20    
+	  14 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "U0/\MicroBlaze_Core_I/Performance.Core /MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg"
+INFO: [Synth 8-3971] The signal "U0/\MicroBlaze_Core_I/Performance.Core /MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 1627.402 ; gain = 490.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+--------------------+---------------+----------------+
+|Module Name   | RTL Object         | Depth x Width | Implemented As | 
++--------------+--------------------+---------------+----------------+
+|PVR           | PVR_const[0]       | 16x32         | LUT            | 
+|Data_Flow_gti | PVR_I/PVR_const[0] | 16x32         | LUT            | 
++--------------+--------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                   | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|U0/\MicroBlaze_Core_I/Performance.Core /MMU_I | Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg | 512 x 36(WRITE_FIRST)  | W | R | 512 x 36(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 1               | 
++----------------------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------+--------------------------------------------+----------------+----------------------+--------------+
+|Module Name                                                      | RTL Object                                 | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------------------------------------------------------+--------------------------------------------+----------------+----------------------+--------------+
+|U0/\MicroBlaze_Core_I/Performance.Core /\Using_ICache.ICache_I1  | Using_Victim_Cache.victim_cache_I1/RAM_reg | User Attribute | 64 x 32              | RAM64M8 x 5  | 
++-----------------------------------------------------------------+--------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 1644.777 ; gain = 507.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 1688.887 ; gain = 552.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                   | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|U0/\MicroBlaze_Core_I/Performance.Core /MMU_I | Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg | 512 x 36(WRITE_FIRST)  | W | R | 512 x 36(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 1               | 
++----------------------------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------+--------------------------------------------+----------------+----------------------+--------------+
+|Module Name                                                      | RTL Object                                 | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------------------------------------------------------+--------------------------------------------+----------------+----------------------+--------------+
+|U0/\MicroBlaze_Core_I/Performance.Core /\Using_ICache.ICache_I1  | Using_Victim_Cache.victim_cache_I1/RAM_reg | User Attribute | 64 x 32              | RAM64M8 x 5  | 
++-----------------------------------------------------------------+--------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:45 ; elapsed = 00:01:51 . Memory (MB): peak = 1738.379 ; gain = 601.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:01:58 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:01:58 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|MicroBlaze  | MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Using_Div_Unit.Div_unit_I1/FPGA_Shift.cnt_shifts_reg[0] | 31     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++------------+--------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-----------------------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                                      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-----------------------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | PC_Buffer_reg[3]                              | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | Using_AXI.Use_AXI_Write.aw_w_fifo_mem_reg[15] | 10     | 10         | 10     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | Using_AXI.r_fifo_mem_reg[15]                  | 10     | 10         | 10     | 0       | 0      | 0      | 0      | 
+|dsrl__3     | Using_AXI.Use_AXI_Write.aw_fifo_mem_reg[15]   | 37     | 37         | 37     | 0       | 0      | 0      | 0      | 
+|dsrl__4     | Using_AXI.Use_AXI_Write.w_fifo_mem_reg[15]    | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | Using_AXI.r_fifo_mem_reg[15]                  | 13     | 13         | 13     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | fifo_mem_reg[31]                              | 32     | 32         | 0      | 32      | 0      | 0      | 0      | 
+|dsrl__7     | ibuffer_reg[2]                                | 47     | 47         | 47     | 0       | 0      | 0      | 0      | 
++------------+-----------------------------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |AND2B1L  |     4|
+|2     |CARRY8   |    23|
+|3     |DSP48E1  |     4|
+|4     |LUT1     |    44|
+|5     |LUT2     |   211|
+|6     |LUT3     |   615|
+|7     |LUT4     |   456|
+|8     |LUT5     |   759|
+|9     |LUT6     |  1350|
+|11    |MULT_AND |     1|
+|12    |MUXCY_L  |   465|
+|13    |MUXF7    |   146|
+|14    |MUXF8    |     1|
+|15    |RAM32M   |    16|
+|16    |RAM32X1D |    32|
+|17    |RAM64M8  |     5|
+|18    |RAMB36E2 |    11|
+|23    |SRL16E   |   176|
+|30    |SRLC16E  |     8|
+|31    |SRLC32E  |    33|
+|32    |XORCY    |   216|
+|33    |FDCE     |     7|
+|34    |FDR      |   144|
+|35    |FDRE     |  2872|
+|36    |FDS      |     1|
+|37    |FDSE     |    99|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:01:58 . Memory (MB): peak = 1750.082 ; gain = 613.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:49 . Memory (MB): peak = 1750.082 ; gain = 571.113
+Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:01:58 . Memory (MB): peak = 1750.082 ; gain = 613.199
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.515 . Memory (MB): peak = 1758.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1134 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1786.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 354 instances were transformed.
+  (CARRY4) => CARRY8: 71 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  FDR => FDRE: 144 instances
+  FDS => FDSE: 1 instance 
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  MULT_AND => LUT2: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 5 instances
+
+Synth Design complete, checksum: 887a8ccc
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:02:13 . Memory (MB): peak = 1786.129 ; gain = 649.246
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_0_synth_1/system_sys_mb_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_sys_mb_0, cache-ID = 9d51ae963164a4b8
+INFO: [Coretcl 2-1174] Renamed 1502 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_0_synth_1/system_sys_mb_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_sys_mb_0_utilization_synth.rpt -pb system_sys_mb_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 30 22:46:11 2021...

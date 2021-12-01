@@ -1,0 +1,705 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 30 22:46:16 2021
+# Process ID: 16100
+# Current directory: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1
+# Command line: vivado.exe -log bd_55cd_eth_buf_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_55cd_eth_buf_0.tcl
+# Log file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/bd_55cd_eth_buf_0.vds
+# Journal file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_55cd_eth_buf_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/projects/adi_hdl/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/projects/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_/Vivado/2021.1/data/ip'.
+Command: synth_design -top bd_55cd_eth_buf_0 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20060
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1265.414 ; gain = 128.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_55cd_eth_buf_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/synth/bd_55cd_eth_buf_0.vhd:166]
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_TXMEM bound to: 8192 - type: integer 
+	Parameter C_TEMAC_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_RXMEM bound to: 8192 - type: integer 
+	Parameter C_TXCSUM bound to: 2 - type: integer 
+	Parameter C_RXCSUM bound to: 2 - type: integer 
+	Parameter C_PHYADDR bound to: 1 - type: integer 
+	Parameter C_AVB bound to: 0 - type: integer 
+	Parameter C_STATS bound to: 1 - type: integer 
+	Parameter C_PHY_TYPE bound to: 4 - type: integer 
+	Parameter C_TYPE bound to: 1 - type: integer 
+	Parameter C_TXVLAN_TRAN bound to: 0 - type: integer 
+	Parameter C_RXVLAN_TRAN bound to: 0 - type: integer 
+	Parameter C_TXVLAN_TAG bound to: 0 - type: integer 
+	Parameter C_RXVLAN_TAG bound to: 0 - type: integer 
+	Parameter C_TXVLAN_STRP bound to: 0 - type: integer 
+	Parameter C_RXVLAN_STRP bound to: 0 - type: integer 
+	Parameter C_MCAST_EXTEND bound to: 0 - type: integer 
+	Parameter C_ENABLE_LVDS bound to: 1 - type: integer 
+	Parameter C_ENABLE_1588 bound to: 0 - type: integer 
+	Parameter C_SIMULATION bound to: 0 - type: integer 
+	Parameter C_PHY_RST_COUNT bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'axi_ethernet_buffer_v2_0_23' declared at 'd:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/e564/hdl/axi_ethernet_buffer_v2_0_rfs.vhd:32599' bound to instance 'U0' of component 'axi_ethernet_buffer_v2_0_23' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/synth/bd_55cd_eth_buf_0.vhd:433]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (15#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (16#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (17#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:492]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (21#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram' (22#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram__parameterized1' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:492]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (22#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram__parameterized1' (22#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (24#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (25#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (26#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (27#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (27#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (27#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (27#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (28#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (29#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram__parameterized3' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:492]
+INFO: [Synth 8-6157] synthesizing module 'asym_bwe_bb' [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8067]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (37#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram__parameterized3' (37#1) [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8905]
+INFO: [Synth 8-256] done synthesizing module 'bd_55cd_eth_buf_0' (42#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/synth/bd_55cd_eth_buf_0.vhd:166]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1402.551 ; gain = 265.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1423.414 ; gain = 286.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1423.414 ; gain = 286.355
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.239 . Memory (MB): peak = 1423.414 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/bd_55cd_eth_buf_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/bd_55cd_eth_buf_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/bd_55cd_eth_buf_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/bd_55cd_eth_buf_0_board.xdc] for cell 'U0'
+Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/synth/bd_55cd_eth_buf_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/synth/bd_55cd_eth_buf_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_0/synth/bd_55cd_eth_buf_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_eth_buf_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_55cd_eth_buf_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_eth_buf_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_55cd_eth_buf_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx_/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_eth_buf_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_55cd_eth_buf_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 5 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1510.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1511.465 ; gain = 0.648
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1511.465 ; gain = 374.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1511.465 ; gain = 374.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO/I_BASIC_SFIFO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXD_MEM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXS_MEM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_INTFCE_I/TX_MEM_INTERFACE/TXC_MEM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_INTFCE_I/TX_MEM_INTERFACE/TXD_MEM. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1511.465 ; gain = 374.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'receive_frame_current_state_reg' in module 'rx_emac_if'
+INFO: [Synth 8-802] inferred FSM for state register 'receive_frame_data_current_state_reg' in module 'rx_emac_if'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'rxs_axistream_current_state_reg' in module 'rx_axistream_if'
+INFO: [Synth 8-802] inferred FSM for state register 'rxd_axistream_current_state_reg' in module 'rx_axistream_if'
+INFO: [Synth 8-802] inferred FSM for state register 'fcsum_wr_cs_reg' in module 'tx_csum_full_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'txc_wr_cs_reg' in module 'tx_csum_full_if'
+INFO: [Synth 8-802] inferred FSM for state register 'txd_wr_cs_reg' in module 'tx_csum_full_if'
+INFO: [Synth 8-802] inferred FSM for state register 'txc_rd_cs_reg' in module 'tx_emac_if'
+INFO: [Synth 8-802] inferred FSM for state register 'txd_rd_cs_reg' in module 'tx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "xpm_memory_base:/gen_wr_b.gen_word_narrow.mem_reg"
+INFO: [Synth 8-3971] The signal "xpm_memory_base:/gen_wr_b.gen_word_narrow.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base__parameterized0:/gen_wr_b.gen_word_narrow.mem_reg"
+INFO: [Synth 8-3971] The signal "xpm_memory_base__parameterized0:/gen_wr_b.gen_word_narrow.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+    reset_init_mem_ptr_1 |                             0000 |                             0000
+    reset_init_mem_ptr_2 |                             0001 |                             0001
+    reset_init_mem_ptr_3 |                             0010 |                             0010
+    reset_init_mem_ptr_4 |                             0011 |                             0011
+                    idle |                             0100 |                             0100
+update_status_fifo_word_1 |                             0101 |                             0110
+update_status_fifo_word_2 |                             0110 |                             0111
+update_status_fifo_word_3 |                             0111 |                             1000
+update_status_fifo_word_4 |                             1000 |                             1001
+update_status_fifo_word_5 |                             1001 |                             1010
+update_status_fifo_word_6 |                             1010 |                             1011
+        update_mem_ptr_1 |                             1011 |                             0101
+        update_mem_ptr_2 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_frame_current_state_reg' using encoding 'sequential' in module 'rx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                               00 |                               00
+ wait_for_start_of_frame |                               01 |                               01
+         receiving_frame |                               10 |                               10
+end_of_frame_check_good_bad |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_frame_data_current_state_reg' using encoding 'sequential' in module 'rx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            reset_init_1 |                            01010 |                            00000
+            reset_init_2 |                            10001 |                            00001
+read_rxd_mem_next_available4write_ptr_1 |                            01001 |                            00010
+read_rxd_mem_next_available4write_ptr_2 |                            00111 |                            00011
+      addr_setup_pause_1 |                            01000 |                            00100
+read_rxs_mem_next_available4write_ptr_1 |                            10111 |                            00111
+read_rxs_mem_next_available4write_ptr_2 |                            11000 |                            01000
+      addr_setup_pause_2 |                            11010 |                            00110
+read_rxs_mem_last_read_out_ptr |                            10101 |                            01010
+      addr_setup_pause_3 |                            10110 |                            01001
+read_rxd_mem_last_read_out_ptr |                            11011 |                            00101
+ pause_read_status_word1 |                            10011 |                            01011
+       read_status_word1 |                            00011 |                            01100
+       read_status_word2 |                            00010 |                            01101
+       read_status_word3 |                            00000 |                            01110
+       read_status_word4 |                            00001 |                            01111
+       read_status_word5 |                            01101 |                            10000
+       read_status_word6 |                            01011 |                            10001
+update_rxs_mem_last_read_out_ptr |                            00110 |                            10010
+       send_status_word1 |                            00100 |                            10011
+       send_status_word2 |                            00101 |                            10100
+       send_status_word3 |                            11001 |                            10101
+       send_status_word4 |                            10010 |                            10110
+       send_status_word5 |                            01111 |                            10111
+       send_status_word6 |                            10000 |                            11000
+         wait_frame_done |                            10100 |                            11001
+update_rxd_mem_last_read_out_ptr |                            01110 |                            11010
+            repeat_again |                            01100 |                            11011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rxs_axistream_current_state_reg' using encoding 'sequential' in module 'rx_axistream_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000100000 |                             0000
+                   prime |                        001000000 |                             0001
+       rd_frame_from_mem |                        000001000 |                             0010
+          wait_end_frame |                        000010000 |                             0111
+                pre_idle |                        010000000 |                             1000
+       almost_full_wait1 |                        000000001 |                             0011
+       almost_full_wait2 |                        000000010 |                             0100
+       almost_full_wait3 |                        000000100 |                             0101
+       almost_full_wait4 |                        100000000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rxd_axistream_current_state_reg' using encoding 'one-hot' in module 'rx_axistream_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                     dst |                             0001 |                             0001
+                 dst_src |                             0010 |                             0010
+                     src |                             0011 |                             0011
+                     idf |                             0100 |                             0100
+                    snap |                             0101 |                             0101
+                     oui |                             0110 |                             0110
+                ipv4_hdr |                             0111 |                             0111
+                pcol_hdr |                             1000 |                             1000
+                    data |                             1001 |                             1001
+                  wr_hdr |                             1010 |                             1110
+                 wr_csum |                             1011 |                             1111
+              wait_tlast |                             1100 |                             1010
+              wait_delay |                             1101 |                             1100
+             wr_hdr_only |                             1110 |                             1011
+           wait_complete |                             1111 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fcsum_wr_cs_reg' using encoding 'sequential' in module 'tx_csum_full_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                             0000
+                 txd_prm |                        000000010 |                             0001
+                 txd_wrt |                        000000100 |                             0010
+                mem_full |                        000001000 |                             0011
+               wait_csum |                        000010000 |                             0111
+                wait_wr1 |                        000100000 |                             0101
+                wait_wr2 |                        001000000 |                             0110
+                clr_full |                        010000000 |                             0100
+      wait_compare_cmplt |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txd_wr_cs_reg' using encoding 'one-hot' in module 'tx_csum_full_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            txc_addr2_wr |                 0000000000000001 |                             0000
+            txc_addr0_wr |                 0000000000000010 |                             0001
+           wait_wr_cmplt |                 0000000000000100 |                             0010
+                 txc_wd0 |                 0000000000001000 |                             0011
+                 txc_wd1 |                 0000000000010000 |                             0100
+                 txc_wd2 |                 0000000000100000 |                             0110
+                 txc_wd3 |                 0000000001000000 |                             0111
+                 txc_wd4 |                 0000000010000000 |                             1000
+                 txc_wd5 |                 0000000100000000 |                             1010
+wait_addr0_compare_cmplt |                 0000001000000000 |                             1001
+          wait_txd_cmplt |                 0000010000000000 |                             1011
+         wr_txd_end_pntr |                 0000100000000000 |                             1111
+           wait_csum_end |                 0001000000000000 |                             1110
+             wr_txc_pntr |                 0010000000000000 |                             1101
+            wait_txd_mem |                 0100000000000000 |                             1100
+wait_addr2_compare_cmplt |                 1000000000000000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txc_wr_cs_reg' using encoding 'one-hot' in module 'tx_csum_full_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         get_txc_wr_pntr |                              000 |                              000
+            get_end_pntr |                              001 |                              001
+          set_txcrd_pntr |                              010 |                              010
+          get_txdwr_pntr |                              011 |                              011
+          set_txdrd_pntr |                              100 |                              100
+           wait_txd_done |                              101 |                              101
+               get_addr3 |                              110 |                              110
+         wait_addr3_pntr |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txc_rd_cs_reg' using encoding 'sequential' in module 'tx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                            00000
+                  get_b1 |                        000000010 |                            01001
+                  get_b2 |                        000000100 |                            01010
+                  get_b3 |                        000001000 |                            01011
+                  get_b4 |                        000010000 |                            01100
+              wait_trdy2 |                        000100000 |                            01101
+              wait_trdy3 |                        001000000 |                            01110
+              check_done |                        010000000 |                            10000
+               wait_last |                        100000000 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txd_rd_cs_reg' using encoding 'one-hot' in module 'tx_emac_if'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1511.465 ; gain = 374.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 20    
+	   3 Input   17 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 21    
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 9     
+	   2 Input   10 Bit       Adders := 12    
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   4 Input    6 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   4 Input    5 Bit       Adders := 3     
+	   3 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 123   
++---Registers : 
+	               60 Bit    Registers := 1     
+	               42 Bit    Registers := 2     
+	               36 Bit    Registers := 25    
+	               32 Bit    Registers := 24    
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 16    
+	               16 Bit    Registers := 29    
+	               15 Bit    Registers := 4     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 19    
+	               10 Bit    Registers := 25    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 453   
++---RAMs : 
+	              72K Bit	(2048 X 36 bit)          RAMs := 1     
+	              36K Bit	(1024 X 36 bit)          RAMs := 2     
++---Muxes : 
+	   6 Input   42 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 5     
+	  11 Input   36 Bit        Muxes := 1     
+	   4 Input   36 Bit        Muxes := 1     
+	  28 Input   36 Bit        Muxes := 1     
+	   5 Input   36 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 10    
+	   6 Input   32 Bit        Muxes := 1     
+	  28 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   3 Input   17 Bit        Muxes := 4     
+	   2 Input   17 Bit        Muxes := 24    
+	   2 Input   16 Bit        Muxes := 63    
+	   4 Input   16 Bit        Muxes := 1     
+	  16 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 1     
+	   4 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 14    
+	  14 Input   11 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 2     
+	  28 Input   11 Bit        Muxes := 1     
+	   8 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 15    
+	  14 Input   10 Bit        Muxes := 1     
+	   6 Input   10 Bit        Muxes := 3     
+	  13 Input   10 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	  28 Input   10 Bit        Muxes := 3     
+	   3 Input   10 Bit        Muxes := 3     
+	   5 Input    9 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 13    
+	  34 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	  28 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 14    
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 16    
+	  11 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	  55 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 59    
+	   4 Input    2 Bit        Muxes := 9     
+	   5 Input    2 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	  16 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 216   
+	   3 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 14    
+	  14 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 1     
+	  28 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 8     
+	  16 Input    1 Bit        Muxes := 33    
+	   8 Input    1 Bit        Muxes := 10    
+	   9 Input    1 Bit        Muxes := 18    
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "U0/\RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXD_MEM /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_tdpram__parameterized1:/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-3971] The signal "xpm_memory_tdpram__parameterized1:/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM gen_blk_box.gen_bb_async.xpm_memory_base_inst
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1511.465 ; gain = 374.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                     | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|U0/\RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXD_MEM /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 36(NO_CHANGE)    | W | R | 2 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 2               | 
+|xpm_memory_tdpram__parameterized1:/xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 36(NO_CHANGE)    | W | R | 1 K x 36(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 1               | 
+|xpm_memory_tdpram__parameterized1:/xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 36(NO_CHANGE)    | W | R | 1 K x 36(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 1               | 
++----------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                           | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|U0/\RCV_INTFCE_I/RX_AXISTREAM_IF_I /\ELASTIC_FIFO/I_BASIC_SFIFO /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 36              | RAM32M16 x 3  | 
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1587.359 ; gain = 450.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1595.219 ; gain = 458.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                     | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|U0/\RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXD_MEM /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 36(NO_CHANGE)    | W | R | 2 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 2               | 
+|xpm_memory_tdpram__parameterized1:/xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 36(NO_CHANGE)    | W | R | 1 K x 36(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 1               | 
+|xpm_memory_tdpram__parameterized1:/xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 36(NO_CHANGE)    | W | R | 1 K x 36(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 1               | 
++----------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                           | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|U0/\RCV_INTFCE_I/RX_AXISTREAM_IF_I /\ELASTIC_FIFO/I_BASIC_SFIFO /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 36              | RAM32M16 x 3  | 
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXD_MEM/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/RCV_INTFCE_I/RX_DP_MEM_IF_I/I_RXS_MEM/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/TX_INTFCE_I/TX_MEM_INTERFACE/TXD_MEM/xpm_memory_base_inst/gen_blk_box.gen_bb_async.xpm_memory_base_inst/gen_blk_box.gen_bb_async.xpm_memory_base_inst_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/TX_INTFCE_I/TX_MEM_INTERFACE/TXC_MEM/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/TX_INTFCE_I/TX_MEM_INTERFACE/TXC_MEM/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1656.730 ; gain = 519.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                 | RTL Name                                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_ethernet_buffer_v2_0_23 | RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/start_of_frame_array_reg[9]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_ethernet_buffer_v2_0_23 | RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/start_of_frame_array_reg[14] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_ethernet_buffer_v2_0_23 | RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/start_of_frame_array_reg[52] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_ethernet_buffer_v2_0_23 | RCV_INTFCE_I/end_of_frame_reset_array_reg[12]                             | 12     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++----------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   142|
+|2     |LUT1     |    97|
+|3     |LUT2     |   747|
+|4     |LUT3     |   397|
+|5     |LUT4     |   578|
+|6     |LUT5     |   626|
+|7     |LUT6     |  1043|
+|8     |MUXF7    |     2|
+|9     |RAM32M16 |     3|
+|10    |RAMB36E2 |     6|
+|15    |SRL16E   |     4|
+|16    |FDPE     |   130|
+|17    |FDRE     |  3311|
+|18    |FDSE     |   219|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1670.375 ; gain = 533.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:14 . Memory (MB): peak = 1670.375 ; gain = 445.266
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1670.375 ; gain = 533.316
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1678.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1699.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 3 instances
+
+Synth Design complete, checksum: 825400e4
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1699.648 ; gain = 562.590
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/bd_55cd_eth_buf_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_55cd_eth_buf_0, cache-ID = 22653a53d814b0b4
+INFO: [Coretcl 2-1174] Renamed 158 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/bd_55cd_eth_buf_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_55cd_eth_buf_0_utilization_synth.rpt -pb bd_55cd_eth_buf_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 30 22:47:58 2021...

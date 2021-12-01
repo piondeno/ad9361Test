@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 30 22:38:43 2021
+# Process ID: 26332
+# Current directory: D:/projects/adi_hdl/library/axi_dmac
+# Command line: vivado.exe -mode batch -source axi_dmac_ip.tcl
+# Log file: D:/projects/adi_hdl/library/axi_dmac/vivado.log
+# Journal file: D:/projects/adi_hdl/library/axi_dmac\vivado.jou
+#-----------------------------------------------------------
+source axi_dmac_ip.tcl

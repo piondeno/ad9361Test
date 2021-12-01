@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_sys_mb_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_dlmb_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_dlmb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_ilmb_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_ilmb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="system_sys_dlmb_0_synth_1"/>
+	</Run>
+	<Run Id="system_sys_dlmb_cntlr_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_dlmb_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_ilmb_cntlr_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_ilmb_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_lmb_bram_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_mb_debug_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_mb_debug_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_rstgen_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_rstgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_sys_200m_rstgen_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_sys_200m_rstgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ddr_cntrl_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ddr_cntrl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ddr_cntrl_rstgen_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ddr_cntrl_rstgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ethernet_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ethernet_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_55cd_eth_buf_0_synth_1"/>
+		<Parent Id="bd_55cd_mac_0_synth_1"/>
+		<Parent Id="bd_55cd_pcs_pma_0_synth_1"/>
+		<Parent Id="bd_55cd_c_shift_ram_0_0_synth_1"/>
+		<Parent Id="bd_55cd_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="bd_55cd_util_vector_logic_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_55cd_eth_buf_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_55cd_mac_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_55cd_pcs_pma_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_pcs_pma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_55cd_c_shift_ram_0_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_c_shift_ram_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_55cd_c_counter_binary_0_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_55cd_util_vector_logic_0_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ethernet_dma_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ethernet_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_iic_main_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_iic_main_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_uart_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_uart_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_timer_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_timer_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_spi_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_spi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_gpio_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_intc_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_sysid_0_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_sysid_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rom_sys_0_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_rom_sys_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_cpu_interconnect_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_cpu_interconnect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_mem_interconnect_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_mem_interconnect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ad9361_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ad9361_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_tdd_sync_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_tdd_sync_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_divclk_sel_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_divclk_sel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_divclk_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_divclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_divclk_reset_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_divclk_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_adc_fifo_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_adc_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_adc_pack_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_adc_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ad9361_adc_dma_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ad9361_adc_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ad9361_dac_fifo_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ad9361_dac_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_ad9361_dac_upack_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_util_ad9361_dac_upack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ad9361_dac_dma_0_synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ad9361_dac_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_sys_mb_0_synth_1"/>
+		<Parent Id="system_sys_dlmb_0_synth_1"/>
+		<Parent Id="system_sys_ilmb_0_synth_1"/>
+		<Parent Id="system_sys_dlmb_cntlr_0_synth_1"/>
+		<Parent Id="system_sys_ilmb_cntlr_0_synth_1"/>
+		<Parent Id="system_sys_lmb_bram_0_synth_1"/>
+		<Parent Id="system_sys_mb_debug_0_synth_1"/>
+		<Parent Id="system_sys_rstgen_0_synth_1"/>
+		<Parent Id="system_sys_200m_rstgen_0_synth_1"/>
+		<Parent Id="system_axi_ddr_cntrl_0_synth_1"/>
+		<Parent Id="system_axi_ddr_cntrl_rstgen_0_synth_1"/>
+		<Parent Id="system_axi_ethernet_0_synth_1"/>
+		<Parent Id="system_axi_ethernet_dma_0_synth_1"/>
+		<Parent Id="system_axi_iic_main_0_synth_1"/>
+		<Parent Id="system_axi_uart_0_synth_1"/>
+		<Parent Id="system_axi_timer_0_synth_1"/>
+		<Parent Id="system_axi_spi_0_synth_1"/>
+		<Parent Id="system_axi_gpio_0_synth_1"/>
+		<Parent Id="system_axi_intc_0_synth_1"/>
+		<Parent Id="system_axi_sysid_0_0_synth_1"/>
+		<Parent Id="system_rom_sys_0_0_synth_1"/>
+		<Parent Id="system_axi_cpu_interconnect_0_synth_1"/>
+		<Parent Id="system_axi_mem_interconnect_0_synth_1"/>
+		<Parent Id="system_axi_ad9361_0_synth_1"/>
+		<Parent Id="system_util_ad9361_tdd_sync_0_synth_1"/>
+		<Parent Id="system_util_ad9361_divclk_sel_0_synth_1"/>
+		<Parent Id="system_util_ad9361_divclk_0_synth_1"/>
+		<Parent Id="system_util_ad9361_divclk_reset_0_synth_1"/>
+		<Parent Id="system_util_ad9361_adc_fifo_0_synth_1"/>
+		<Parent Id="system_util_ad9361_adc_pack_0_synth_1"/>
+		<Parent Id="system_axi_ad9361_adc_dma_0_synth_1"/>
+		<Parent Id="system_axi_ad9361_dac_fifo_0_synth_1"/>
+		<Parent Id="system_util_ad9361_dac_upack_0_synth_1"/>
+		<Parent Id="system_axi_ad9361_dac_dma_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

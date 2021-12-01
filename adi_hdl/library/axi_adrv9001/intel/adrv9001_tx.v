@@ -39,6 +39,7 @@ module adrv9001_tx #(
   parameter CMOS_LVDS_N = 0,
   parameter NUM_LANES = 4,
   parameter FPGA_TECHNOLOGY = 0,
+  parameter USE_BUFG = 0,
   parameter USE_RX_CLK_FOR_TX = 0
 ) (
   input                   ref_clk,
@@ -64,6 +65,8 @@ module adrv9001_tx #(
   input                   rx_ssi_rst,
 
   // internal resets and clocks
+
+  output     [31:0]       dac_clk_ratio,
 
   input                   dac_rst,
   output                  dac_clk_div,
@@ -131,5 +134,7 @@ module adrv9001_tx #(
   // No clock divider, qualifier used instead
   assign dac_clk_div = tx_clk;
   assign dac_clk = tx_clk;
+
+  assign dac_clk_ratio = 1;
 
 endmodule

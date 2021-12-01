@@ -1,0 +1,670 @@
+
+*** Running vivado
+    with args -log bd_55cd_pcs_pma_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_55cd_pcs_pma_0.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_55cd_pcs_pma_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/projects/adi_hdl/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/projects/ghdl/library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_/Vivado/2021.1/data/ip'.
+Command: synth_design -top bd_55cd_pcs_pma_0 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2720
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:102]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:103]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:104]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:105]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:106]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:107]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:120]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bd_55cd_pcs_pma_0_decode_8b10b_lut_base with formal parameter declaration list [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:121]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1272.105 ; gain = 128.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.v:98]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_support' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_support.v:66]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_block' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:95]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_reset_wtd_timer' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_reset_wtd_timer.v:66]
+	Parameter WAIT_TIME bound to: 24'b010110010110100000101111 
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_reset_wtd_timer' (1#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_reset_wtd_timer.v:66]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_sync_block' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_sync_block.v:62]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27596]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (2#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_sync_block' (3#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_sync_block.v:62]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_sgmii_adapt' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_sgmii_adapt.v:124]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_reset_sync' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_reset_sync.v:62]
+INFO: [Synth 8-6157] synthesizing module 'FDP' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27764]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (4#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27764]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_reset_sync' (5#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_reset_sync.v:62]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_clk_gen' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_clk_gen.v:83]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_johnson_cntr' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_johnson_cntr.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_johnson_cntr' (6#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_johnson_cntr.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_clk_gen' (7#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_clk_gen.v:83]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_tx_rate_adapt' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_tx_rate_adapt.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_tx_rate_adapt' (8#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_tx_rate_adapt.v:72]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_rx_rate_adapt' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_rx_rate_adapt.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_rx_rate_adapt' (9#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_rx_rate_adapt.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_sgmii_adapt' (10#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_adapt/bd_55cd_pcs_pma_0_sgmii_adapt.v:124]
+WARNING: [Synth 8-7071] port 's_axi_aclk' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_resetn' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_awaddr' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_awvalid' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_wdata' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_wvalid' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_bready' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_araddr' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_arvalid' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_arready' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_rdata' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_rresp' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_rvalid' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7071] port 's_axi_rready' of module 'gig_ethernet_pcs_pma_v16_2_4' is unconnected for instance 'bd_55cd_pcs_pma_0_core' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+WARNING: [Synth 8-7023] instance 'bd_55cd_pcs_pma_0_core' of module 'gig_ethernet_pcs_pma_v16_2_4' has 94 connections declared, but only 76 given [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:271]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_lvds_transceiver_ser8' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_lvds_transceiver_ser8.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_serdes_1_to_10_ser8' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_1_to_10_ser8.v:56]
+	Parameter REF_FREQ bound to: 625.000000 - type: double 
+	Parameter BIT_TIME bound to: 800 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_delay_controller_wrap' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_delay_controller_wrap.v:59]
+	Parameter S bound to: 4 - type: integer 
+WARNING: [Synth 8-151] case item 7'b1000000 is unreachable [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_delay_controller_wrap.v:395]
+WARNING: [Synth 8-151] case item 7'b1100000 is unreachable [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_delay_controller_wrap.v:395]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_delay_controller_wrap' (21#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_delay_controller_wrap.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_gearbox_4_to_10' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_gearbox_4_to_10.v:58]
+	Parameter D bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93195]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (22#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93195]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93030]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (23#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93030]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_gearbox_4_to_10' (24#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_gearbox_4_to_10.v:58]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DIFF_OUT' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51726]
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DIFF_OUT' (25#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51726]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: COUNT - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 312.500000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3' (26#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE3' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:58654]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter FIFO_ENABLE bound to: FALSE - type: string 
+	Parameter FIFO_SYNC_MODE bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE3' (27#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:58654]
+WARNING: [Synth 8-7071] port 'INTERNAL_DIVCLK' of module 'ISERDESE3' is unconnected for instance 'iserdes_m' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_1_to_10_ser8.v:245]
+WARNING: [Synth 8-7023] instance 'iserdes_m' of module 'ISERDESE3' has 10 connections declared, but only 9 given [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_1_to_10_ser8.v:245]
+WARNING: [Synth 8-7071] port 'INTERNAL_DIVCLK' of module 'ISERDESE3' is unconnected for instance 'iserdes_s' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_1_to_10_ser8.v:286]
+WARNING: [Synth 8-7023] instance 'iserdes_s' of module 'ISERDESE3' has 10 connections declared, but only 9 given [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_1_to_10_ser8.v:286]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE3' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 800 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 312.500000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE3' (28#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3__parameterized0' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+	Parameter CASCADE bound to: MASTER - type: string 
+	Parameter DELAY_FORMAT bound to: COUNT - type: string 
+	Parameter DELAY_SRC bound to: DATAIN - type: string 
+	Parameter DELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 312.500000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3__parameterized0' (28#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE3__parameterized0' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+	Parameter CASCADE bound to: SLAVE_END - type: string 
+	Parameter DELAY_FORMAT bound to: COUNT - type: string 
+	Parameter DELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 312.500000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE3__parameterized0' (28#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_serdes_1_to_10_ser8' (29#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_1_to_10_ser8.v:56]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_decode_8b10b_lut_base' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:65]
+	Parameter C_HAS_CODE_ERR bound to: 1 - type: integer 
+	Parameter C_HAS_DISP_ERR bound to: 1 - type: integer 
+	Parameter C_HAS_DISP_IN bound to: 0 - type: integer 
+	Parameter C_HAS_ND bound to: 0 - type: integer 
+	Parameter C_HAS_SYM_DISP bound to: 0 - type: integer 
+	Parameter C_HAS_RUN_DISP bound to: 1 - type: integer 
+	Parameter C_SINIT_DOUT bound to: 8'b00000000 
+	Parameter C_SINIT_KOUT bound to: 0 - type: integer 
+	Parameter C_SINIT_RUN_DISP bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:368]
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:508]
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:815]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_decode_8b10b_lut_base' (30#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_decode_8b10b_lut_base.v:65]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_encode_8b10b_lut_base' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_encode_8b10b_lut_base.v:65]
+	Parameter C_HAS_DISP_IN bound to: 1 - type: integer 
+	Parameter C_HAS_FORCE_CODE bound to: 0 - type: integer 
+	Parameter C_FORCE_CODE_DISP bound to: 1 - type: integer 
+	Parameter C_HAS_ND bound to: 0 - type: integer 
+	Parameter C_HAS_KERR bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_encode_8b10b_lut_base.v:233]
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_encode_8b10b_lut_base.v:453]
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_encode_8b10b_lut_base.v:501]
+INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_encode_8b10b_lut_base.v:599]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_encode_8b10b_lut_base' (31#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_encode_8b10b_lut_base.v:65]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_serdes_10_to_1_ser8' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_10_to_1_ser8.v:56]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:66312]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (32#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:66312]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_gearbox_10_to_4' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_gearbox_10_to_4.v:56]
+	Parameter D bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_gearbox_10_to_4' (33#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_gearbox_10_to_4.v:56]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE3' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:70497]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE3' (34#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:70497]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_serdes_10_to_1_ser8' (35#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_serdes_10_to_1_ser8.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_lvds_transceiver_ser8' (36#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/sgmii_lvds_transceiver/bd_55cd_pcs_pma_0_lvds_transceiver_ser8.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_block' (37#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_block.v:95]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_sgmii_phy_clk_gen' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_sgmii_phy_clk_gen.v:60]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:52155]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (38#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:52155]
+INFO: [Synth 8-6157] synthesizing module 'MMCME3_ADV' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:60154]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 2.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 1.600000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 5.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME3_ADV' (39#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:60154]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (40#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE_DIV' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1122]
+	Parameter BUFGCE_DIVIDE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE_DIV' (41#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1122]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_idelayctrl' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_idelayctrl.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_idelayctrl' (42#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_idelayctrl.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_sgmii_phy_clk_gen' (43#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_sgmii_phy_clk_gen.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_pcs_pma_0_sgmii_phy_reset_gen' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_sgmii_phy_reset_gen.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_sgmii_phy_reset_gen' (44#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_sgmii_phy_reset_gen.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0_support' (45#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_support.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_pcs_pma_0' (46#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.v:98]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.586 ; gain = 222.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1384.512 ; gain = 240.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1384.512 ; gain = 240.848
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1396.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/bd_55cd_pcs_pma_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/bd_55cd_pcs_pma_0_board.xdc] for cell 'inst'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0_clocks.xdc] for cell 'inst'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_pcs_pma_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_55cd_pcs_pma_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_pcs_pma_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_pcs_pma_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1501.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 121 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  FD => FDRE: 42 instances
+  FDP => FDPE: 66 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (DIFFINBUF, IBUFCTRL(x2)): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1501.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1501.137 ; gain = 357.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1501.137 ; gain = 357.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_pcs_pma_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP = true for mdc. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for mdio_i. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for refclk625_n. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for refclk625_p. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for rxn. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for rxp. (constraint file  auto generated constraint).
+WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
+WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1501.137 ; gain = 357.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'SYNCHRONISE'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.TX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            loss_of_sync |                    0000000000100 |                             0000
+          comma_detect_1 |                    0010000000000 |                             0001
+           aquire_sync_1 |                    0000000010000 |                             0010
+          comma_detect_2 |                    0000000000001 |                             0011
+           aquire_sync_2 |                    0000000000010 |                             0100
+          comma_detect_3 |                    0000000001000 |                             0101
+         sync_acquired_1 |                    1000000000000 |                             0110
+         sync_acquired_2 |                    0001000000000 |                             0111
+        sync_acquired_2a |                    0100000000000 |                             1000
+         sync_acquired_3 |                    0000001000000 |                             1001
+        sync_acquired_3a |                    0000100000000 |                             1010
+         sync_acquired_4 |                    0000010000000 |                             1011
+        sync_acquired_4a |                    0000000100000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'SYNCHRONISE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.TX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1501.137 ; gain = 357.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	              128 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 20    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 269   
++---Muxes : 
+	   3 Input  128 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 9     
+	   3 Input   16 Bit        Muxes := 2     
+	  17 Input   16 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 2     
+	   3 Input   15 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 2     
+	   3 Input   14 Bit        Muxes := 1     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 18    
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 7     
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 9     
+	   2 Input    6 Bit        Muxes := 14    
+	   3 Input    6 Bit        Muxes := 1     
+	  17 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 34    
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 4     
+	   6 Input    4 Bit        Muxes := 20    
+	  10 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 7     
+	   3 Input    3 Bit        Muxes := 6     
+	   4 Input    3 Bit        Muxes := 2     
+	  15 Input    3 Bit        Muxes := 1     
+	  16 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	  12 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 131   
+	   4 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 11    
+	  10 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+	  15 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 23    
+	   9 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 5     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1501.137 ; gain = 357.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------------------------------+----------------------------------------------------------+---------------+----------------+
+|Module Name                             | RTL Object                                               | Depth x Width | Implemented As | 
++----------------------------------------+----------------------------------------------------------+---------------+----------------+
+|bd_55cd_pcs_pma_0_decode_8b10b_lut_base | b5                                                       | 64x5          | LUT            | 
+|bd_55cd_pcs_pma_0_decode_8b10b_lut_base | b6_disp                                                  | 64x3          | LUT            | 
+|bd_55cd_pcs_pma_0_support               | pcs_pma_block_i/lvds_transceiver_mw/decode_8b10b/b5      | 64x5          | LUT            | 
+|bd_55cd_pcs_pma_0_support               | pcs_pma_block_i/lvds_transceiver_mw/decode_8b10b/b6_disp | 64x3          | LUT            | 
++----------------------------------------+----------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 16 of d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc:16]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 17 of d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc:17]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 18 of d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_2/synth/bd_55cd_pcs_pma_0.xdc:18]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1542.781 ; gain = 399.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1570.441 ; gain = 426.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1588.402 ; gain = 444.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gig_ethernet_pcs_pma_v16_2_4 | gpcs_pma_inst/RX_GMII_AT_TXOUTCLK.RECEIVER_TXOUTCLK/RXDATA_REG5_reg[7] | 5      | 8     | NO           | NO                 | NO                | 8      | 0       | 
++-----------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     3|
+|2     |BUFGCE_DIV      |     1|
+|3     |CARRY8          |     8|
+|4     |IDELAYE3        |     3|
+|6     |ISERDESE3       |     2|
+|7     |LUT1            |    30|
+|8     |LUT2            |    84|
+|9     |LUT3            |   145|
+|10    |LUT4            |   161|
+|11    |LUT5            |   125|
+|12    |LUT6            |   248|
+|13    |MMCME3_ADV      |     1|
+|14    |MUXF7           |     4|
+|15    |MUXF8           |     1|
+|16    |ODELAYE3        |     1|
+|17    |OSERDESE3       |     1|
+|18    |RAM32M          |     4|
+|19    |SRL16           |     2|
+|20    |SRL16E          |     8|
+|21    |FD              |    42|
+|22    |FDP             |    60|
+|23    |FDPE            |    10|
+|24    |FDRE            |   677|
+|25    |FDSE            |    41|
+|26    |IBUFDS_DIFF_OUT |     1|
+|27    |IBUFGDS         |     1|
+|28    |OBUFDS          |     1|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1589.004 ; gain = 445.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 1589.004 ; gain = 328.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1589.004 ; gain = 445.340
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1589.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1625.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 114 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  FD => FDRE: 42 instances
+  FDP => FDPE: 60 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (DIFFINBUF, IBUFCTRL(x2)): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete, checksum: 77184ed1
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1625.285 ; gain = 481.621
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_pcs_pma_0_synth_1/bd_55cd_pcs_pma_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_55cd_pcs_pma_0, cache-ID = 7e4ac6610135151e
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_pcs_pma_0_synth_1/bd_55cd_pcs_pma_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_55cd_pcs_pma_0_utilization_synth.rpt -pb bd_55cd_pcs_pma_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 30 22:47:54 2021...

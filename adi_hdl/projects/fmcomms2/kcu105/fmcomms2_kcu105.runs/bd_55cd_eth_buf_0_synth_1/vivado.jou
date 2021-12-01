@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 30 22:46:16 2021
+# Process ID: 16100
+# Current directory: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1
+# Command line: vivado.exe -log bd_55cd_eth_buf_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_55cd_eth_buf_0.tcl
+# Log file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1/bd_55cd_eth_buf_0.vds
+# Journal file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_eth_buf_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_55cd_eth_buf_0.tcl -notrace
