@@ -1,16 +1,16 @@
 [
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~test|test>io_output_i_aaa",
+    "sink":"~test|test>io_output_o_bbb",
     "sources":[
-      "~test|test>io_input_i_aaa"
+      "~test|test>io_input_i_bbb"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~test|test>io_output_i_bbb",
+    "sink":"~test|test>io_output_o_aaa",
     "sources":[
-      "~test|test>io_input_i_bbb"
+      "~test|test>io_input_i_aaa"
     ]
   },
   {
