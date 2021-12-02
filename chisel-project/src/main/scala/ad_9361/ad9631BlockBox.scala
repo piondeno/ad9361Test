@@ -22,6 +22,17 @@ class axi_ad9361 extends BlackBox(Map("ID" -> 1234,
   })
 }
 
+class util_upack2 extends  BlackBox(Map("NUM_OF_CHANNELS" -> 4,
+  "SAMPLES_PER_CHANNEL" -> 1,
+  "SAMPLE_DATA_WIDTH" -> 16)){
+  val io = IO(new Bundle {
+    val commonIF_ = new commonIF
+    val enableIF_ = new enableIF
+    val fifoRdIF_ = new fifoRdIF
+    val axisIF_ = new axisIF
+  })
+}
+
 class UseDut extends RawModule {
   val io = IO(new Bundle {
     val rxLvdsIF_ = new rxLvdsIF

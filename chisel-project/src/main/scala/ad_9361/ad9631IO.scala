@@ -2,10 +2,18 @@ package ad_9361
 
 import chisel3._
 
+//common interface
+class commonIF_in extends Bundle {
+  val clk = Bool()   //  input clk,
+  val reset = Bool()   //  input reset,
+}
+class commonIF extends Bundle {
+  val in = Input(new commonIF_in)
+}
+
 /*
 9361 interface
 */
- */
 // physical interface (receive-lvds)
 class rxLvdsIF_in extends Bundle {
   val rx_clk_in_p = Bool()   //  input           rx_clk_in_p,
