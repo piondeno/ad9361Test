@@ -192,5 +192,5 @@ def shrinkPortNameForChiselBlockBox():
 
 if __name__ == '__main__':
     #IO_verilogToChisel()
-    #IO_verilogToChiselV2()
-    shrinkPortNameForChiselBlockBox()
+    IO_verilogToChiselV2()
+    #shrinkPortNameForChiselBlockBox()

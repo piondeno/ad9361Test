@@ -4,8 +4,8 @@ import chisel3._
 import chisel3.experimental.IO
 
 class axi_ad9361 extends BlackBox(Map("ID" -> 1234,
-                                          "MODE_1R1T" -> 1,
-                                          "CMOS_OR_LVDS_N" -> 0)){
+                                      "MODE_1R1T" -> 1,
+                                      "CMOS_OR_LVDS_N" -> 0)){
 
   val io = IO(new Bundle {
     val rxLvdsIF_ = new rxLvdsIF

@@ -2,6 +2,10 @@ package ad_9361
 
 import chisel3._
 
+/*
+9361 interface
+*/
+ */
 // physical interface (receive-lvds)
 class rxLvdsIF_in extends Bundle {
   val rx_clk_in_p = Bool()   //  input           rx_clk_in_p,
@@ -192,6 +196,46 @@ class gpio extends Bundle {
   val out = Output(new gpio_out)
 }
 
+/*
+util_upack2
+*/
+// enableIF
+class enableIF_in extends Bundle {
+  val fifo_rd_en = Bool()   //  input fifo_rd_en,
+  val enable_0 = Bool()   //  input enable_0,
+  val enable_1 = Bool()   //  input enable_1,
+  val enable_2 = Bool()   //  input enable_2,
+  val enable_3 = Bool()   //  input enable_3,
+}
+class enableIF extends Bundle {
+  val in = Input(new enableIF_in)
+}
+
+// fifoRd
+class fifoRdIF_out extends Bundle {
+  val fifo_rd_valid = Bool()   //  output fifo_rd_valid,
+  val fifo_rd_underflow = Bool()   //  output fifo_rd_underflow,
+  val fifo_rd_data_0 = UInt(16.W)   //  output [15:0] fifo_rd_data_0,
+  val fifo_rd_data_1 = UInt(16.W)   //  output [15:0] fifo_rd_data_1,
+  val fifo_rd_data_2 = UInt(16.W)   //  output [15:0] fifo_rd_data_2,
+  val fifo_rd_data_3 = UInt(16.W)   //  output [15:0] fifo_rd_data_3,
+}
+class fifoRdIF extends Bundle {
+  val out = Output(new fifoRdIF_out)
+}
+
+//slave axi stream interface
+class axisIF_in extends Bundle {
+  val s_axis_valid = Bool()   //  input s_axis_valid,
+  val s_axis_data = UInt(64.W)   //  input [63:0] s_axis_data
+}
+class axisIF_out extends Bundle {
+  val s_axis_ready = Bool()   //  output s_axis_ready,
+}
+class axisIF extends Bundle {
+  val in = Input(new axisIF_in)
+  val out = Output(new axisIF_out)
+}
 
 
 
