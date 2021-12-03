@@ -2,11 +2,14 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Nov 30 22:38:43 2021
-# Process ID: 26332
-# Current directory: D:/projects/adi_hdl/library/axi_dmac
-# Command line: vivado.exe -mode batch -source axi_dmac_ip.tcl
-# Log file: D:/projects/adi_hdl/library/axi_dmac/vivado.log
-# Journal file: D:/projects/adi_hdl/library/axi_dmac\vivado.jou
+# Start of session at: Fri Dec  3 14:58:52 2021
+# Process ID: 27768
+# Current directory: F:/projects/ad9361Test/adi_hdl/library/axi_dmac
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27152 F:\projects\ad9361Test\adi_hdl\library\axi_dmac\axi_dmac.xpr
+# Log file: F:/projects/ad9361Test/adi_hdl/library/axi_dmac/vivado.log
+# Journal file: F:/projects/ad9361Test/adi_hdl/library/axi_dmac\vivado.jou
 #-----------------------------------------------------------
-source axi_dmac_ip.tcl
+start_gui
+open_project F:/projects/ad9361Test/adi_hdl/library/axi_dmac/axi_dmac.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

@@ -103,37 +103,39 @@ class masterIF_in extends Bundle {
 class masterIF_out extends Bundle {
   val l_clk = Bool()   //  output          l_clk,
   val rst = Bool()   //  output          rst,
+  val adc_r1_mode = Bool()   //  output          adc_r1_mode,
+  val dac_r1_mode = Bool()   //  output          dac_r1_mode,
 }
 class masterIF extends Bundle {
   val in = Input(new masterIF_in)
   val out = Output(new masterIF_out)
 }
 
-// axi interface
+// slave axi interface
 class slaveAxiLiteIF_in extends Bundle {
-  val axi_aclk = Bool()   //  input           axi_aclk,
-  val axi_aresetn = Bool()   //  input           axi_aresetn,
-  val axi_awvalid = Bool()   //  input           axi_awvalid,
-  val axi_awaddr = UInt(16.W)   //  input   [15:0]  axi_awaddr,
-  val axi_awprot = UInt(3.W)   //  input   [ 2:0]  axi_awprot,
-  val axi_wvalid = Bool()   //  input           axi_wvalid,
-  val axi_wdata = UInt(32.W)   //  input   [31:0]  axi_wdata,
-  val axi_wstrb = UInt(4.W)   //  input   [ 3:0]  axi_wstrb,
-  val axi_bready = Bool()   //  input           axi_bready,
-  val axi_arvalid = Bool()   //  input           axi_arvalid,
-  val axi_araddr = UInt(16.W)   //  input   [15:0]  axi_araddr,
-  val axi_arprot = UInt(3.W)   //  input   [ 2:0]  axi_arprot,
-  val axi_rready = Bool()   //  input           axi_rready,
+  val s_axi_aclk = Bool()   //  input           s_axi_aclk,
+  val s_axi_aresetn = Bool()   //  input           s_axi_aresetn,
+  val s_axi_awvalid = Bool()   //  input           s_axi_awvalid,
+  val s_axi_awaddr = UInt(16.W)   //  input   [15:0]  s_axi_awaddr,
+  val s_axi_awprot = UInt(3.W)   //  input   [ 2:0]  s_axi_awprot,
+  val s_axi_wvalid = Bool()   //  input           s_axi_wvalid,
+  val s_axi_wdata = UInt(32.W)   //  input   [31:0]  s_axi_wdata,
+  val s_axi_wstrb = UInt(4.W)   //  input   [ 3:0]  s_axi_wstrb,
+  val s_axi_bready = Bool()   //  input           s_axi_bready,
+  val s_axi_arvalid = Bool()   //  input           s_axi_arvalid,
+  val s_axi_araddr = UInt(16.W)   //  input   [15:0]  s_axi_araddr,
+  val s_axi_arprot = UInt(3.W)   //  input   [ 2:0]  s_axi_arprot,
+  val s_axi_rready = Bool()   //  input           s_axi_rready,
 }
 class slaveAxiLiteIF_out extends Bundle {
-  val axi_awready = Bool()   //  output          axi_awready,
-  val axi_wready = Bool()   //  output          axi_wready,
-  val axi_bvalid = Bool()   //  output          axi_bvalid,
-  val axi_bresp = UInt(2.W)   //  output  [ 1:0]  axi_bresp,
-  val axi_arready = Bool()   //  output          axi_arready,
-  val axi_rvalid = Bool()   //  output          axi_rvalid,
-  val axi_rdata = UInt(32.W)   //  output  [31:0]  axi_rdata,
-  val axi_rresp = UInt(2.W)   //  output  [ 1:0]  axi_rresp,
+  val s_axi_awready = Bool()   //  output          s_axi_awready,
+  val s_axi_wready = Bool()   //  output          s_axi_wready,
+  val s_axi_bvalid = Bool()   //  output          s_axi_bvalid,
+  val s_axi_bresp = UInt(2.W)   //  output  [ 1:0]  s_axi_bresp,
+  val s_axi_arready = Bool()   //  output          s_axi_arready,
+  val s_axi_rvalid = Bool()   //  output          s_axi_rvalid,
+  val s_axi_rdata = UInt(32.W)   //  output  [31:0]  s_axi_rdata,
+  val s_axi_rresp = UInt(2.W)   //  output  [ 1:0]  s_axi_rresp,
 }
 class slaveAxiLiteIF extends Bundle {
   val in = Input(new slaveAxiLiteIF_in)
@@ -157,7 +159,6 @@ class dmaAdcIF_out extends Bundle {
   val adc_enable_q1 = Bool()   //  output          adc_enable_q1,
   val adc_valid_q1 = Bool()   //  output          adc_valid_q1,
   val adc_data_q1 = UInt(16.W)   //  output  [15:0]  adc_data_q1,
-  val adc_r1_mode = Bool()   //  output          adc_r1_mode,
 }
 class dmaAdcIF extends Bundle {
   val in = Input(new dmaAdcIF_in)
@@ -181,7 +182,6 @@ class dmaDacIF_out extends Bundle {
   val dac_valid_i1 = Bool()   //  output          dac_valid_i1,
   val dac_enable_q1 = Bool()   //  output          dac_enable_q1,
   val dac_valid_q1 = Bool()   //  output          dac_valid_q1,
-  val dac_r1_mode = Bool()   //  output          dac_r1_mode,
 }
 class dmaDacIF extends Bundle {
   val in = Input(new dmaDacIF_in)
@@ -244,6 +244,187 @@ class axisIF extends Bundle {
   val in = Input(new axisIF_in)
   val out = Output(new axisIF_out)
 }
+
+/*
+util_rfifo
+*/
+//rfifoDinIF
+class rfifoDinIF_in extends Bundle {
+  val din_valid_in_0 = Bool()   //  input                                   din_valid_in_0,
+  val din_data_0 = UInt(16.W)   //  input       [15:0]        din_data_0,
+  val din_valid_in_1 = Bool()   //  input                                   din_valid_in_1,
+  val din_data_1 = UInt(16.W)   //  input       [15:0]        din_data_1,
+  val din_valid_in_2 = Bool()   //  input                                   din_valid_in_2,
+  val din_data_2 = UInt(16.W)   //  input       [15:0]        din_data_2,
+  val din_valid_in_3 = Bool()   //  input                                   din_valid_in_3,
+  val din_data_3 = UInt(16.W)   //  input       [15:0]        din_data_3,
+  val din_unf = Bool()   //  input                                   din_unf,
+}
+class rfifoDinIF_out extends Bundle {
+  val din_enable_0 = Bool()   //  output                                  din_enable_0,
+  val din_valid_0 = Bool()   //  output                                  din_valid_0,
+  val din_enable_1 = Bool()   //  output                                  din_enable_1,
+  val din_valid_1 = Bool()   //  output                                  din_valid_1,
+  val din_enable_2 = Bool()   //  output                                  din_enable_2,
+  val din_valid_2 = Bool()   //  output                                  din_valid_2,
+  val din_enable_3 = Bool()   //  output                                  din_enable_3,
+  val din_valid_3 = Bool()   //  output                                  din_valid_3,
+}
+class rfifoDinIF extends Bundle {
+  val in = Input(new rfifoDinIF_in)
+  val out = Output(new rfifoDinIF_out)
+}
+//rfifoDinRstnClk
+class rfifoDinRstnClk_in extends Bundle {
+  val din_rstn = Bool()   //  input                                   din_rstn,
+  val din_clk = Bool()   //  input                                   din_clk,
+}
+class rfifoDinRstnClk extends Bundle {
+  val in = Input(new rfifoDinRstnClk_in)
+}
+
+//rfifoDoutIF
+class rfifoDoutIF_in extends Bundle {
+  val dout_enable_0 = Bool()   //  input                                   dout_enable_0,
+  val dout_valid_0 = Bool()   //  input                                   dout_valid_0,
+  val dout_enable_1 = Bool()   //  input                                   dout_enable_1,
+  val dout_valid_1 = Bool()   //  input                                   dout_valid_1,
+  val dout_enable_2 = Bool()   //  input                                   dout_enable_2,
+  val dout_valid_2 = Bool()   //  input                                   dout_valid_2,
+  val dout_enable_3 = Bool()   //  input                                   dout_enable_3,
+  val dout_valid_3 = Bool()   //  input                                   dout_valid_3,
+}
+class rfifoDoutIF_out extends Bundle {
+  //val dout_valid_out_0 = Bool()   //  output                                  dout_valid_out_0,
+  val dout_data_0 = UInt(16.W)   //  output      [15:0]       dout_data_0,
+  //val dout_valid_out_1 = Bool()   //  output                                  dout_valid_out_1,
+  val dout_data_1 = UInt(16.W)   //  output      [15:0]       dout_data_1,
+  //val dout_valid_out_2 = Bool()   //  output                                  dout_valid_out_2,
+  val dout_data_2 = UInt(16.W)   //  output      [15:0]       dout_data_2,
+  //val dout_valid_out_3 = Bool()   //  output                                  dout_valid_out_3,
+  val dout_data_3 = UInt(16.W)   //  output      [15:0]       dout_data_3,
+  val dout_unf =  Bool()    //  output  reg                             dout_unf
+}
+class rfifoDoutIF extends Bundle {
+  val in = Input(new rfifoDoutIF_in)
+  val out = Output(new rfifoDoutIF_out)
+}
+//rfifoRstClk
+class rfifoRstClk_in extends Bundle {
+  val dout_rst = Bool()   //  input                                   dout_rst,
+  val dout_clk = Bool()   //  input                                   dout_clk,
+}
+class rfifoRstClk extends Bundle {
+  val in = Input(new rfifoRstClk_in)
+}
+
+/*
+util_wfifo
+ */
+//wfifoDinRstClk
+class wfifoDinRstClk_in extends Bundle {
+  val din_rst = Bool()   //  input                   din_rst,
+  val din_clk = Bool()   //  input                   din_clk,
+}
+class wfifoDinRstClk extends Bundle {
+  val in = Input(new wfifoDinRstClk_in)
+}
+
+//wfifoDinIF
+class wfifoDinIF_in extends Bundle {
+  val din_enable_0 = Bool()   //  input                   din_enable_0,
+  val din_valid_0 = Bool()   //  input                   din_valid_0,
+  val din_data_0 = UInt(16.W)   //  input       [15:0]  din_data_0,
+  val din_enable_1 = Bool()   //  input                   din_enable_1,
+  val din_valid_1 = Bool()   //  input                   din_valid_1,
+  val din_data_1 = UInt(16.W)   //  input       [15:0]  din_data_1,
+  val din_enable_2 = Bool()   //  input                   din_enable_2,
+  val din_valid_2 = Bool()   //  input                   din_valid_2,
+  val din_data_2 = UInt(16.W)   //  input       [15:0]  din_data_2,
+  val din_enable_3 = Bool()   //  input                   din_enable_3,
+  val din_valid_3 = Bool()   //  input                   din_valid_3,
+  val din_data_3 = UInt(16.W)   //  input       [15:0]  din_data_3,
+}
+class wfifoDinIF_out extends Bundle {
+  val din_ovf = Bool()   //  output               din_ovf,
+}
+class wfifoDinIF extends Bundle {
+  val in = Input(new wfifoDinIF_in)
+  val out = Output(new wfifoDinIF_out)
+}
+
+//wfifoDoutRstnClk
+class wfifoDoutRstnClk_in extends Bundle {
+  val dout_rstn = Bool()   //  input                   dout_rstn,
+  val dout_clk = Bool()   //  input                   dout_clk,
+}
+class wfifoDoutRstnClk extends Bundle {
+  val in = Input(new wfifoDoutRstnClk_in)
+}
+
+//wfifoDoutIF
+class wfifoDoutIF_in extends Bundle {
+  val dout_ovf = Bool()   //  input                   dout_ovf
+}
+class wfifoDoutIF_out extends Bundle {
+  val dout_enable_0 = Bool()   //  output                  dout_enable_0,
+  val dout_valid_0 = Bool()   //  output                  dout_valid_0,
+  val dout_data_0 = UInt(16.W)   //  output      [15:0]  dout_data_0,
+  val dout_enable_1 = Bool()   //  output                  dout_enable_1,
+  val dout_valid_1 = Bool()   //  output                  dout_valid_1,
+  val dout_data_1 = UInt(16.W)   //  output      [15:0]  dout_data_1,
+  val dout_enable_2 = Bool()   //  output                  dout_enable_2,
+  val dout_valid_2 = Bool()   //  output                  dout_valid_2,
+  val dout_data_2 = UInt(16.W)   //  output      [15:0]  dout_data_2,
+  val dout_enable_3 = Bool()   //  output                  dout_enable_3,
+  val dout_valid_3 = Bool()   //  output                  dout_valid_3,
+  val dout_data_3 = UInt(16.W)   //  output      [15:0]  dout_data_3,
+}
+class wfifoDoutIF extends Bundle {
+  val in = Input(new wfifoDoutIF_in)
+  val out = Output(new wfifoDoutIF_out)
+}
+
+/*
+util_cpack2
+*/
+//cpackFifoWrIF
+class cpackFifoWrIF_in extends Bundle {
+  val enable_0 = Bool()   // input enable_0,
+  val enable_1 = Bool()   //  input enable_1,
+  val enable_2 = Bool()   //  input enable_2,
+  val enable_3 = Bool()   //  input enable_3,
+  val fifo_wr_en = Bool()   //  input fifo_wr_en,
+  val fifo_wr_data_0 = UInt(16.W)   //  input [15:0] fifo_wr_data_0,
+  val fifo_wr_data_1 = UInt(16.W)   //  input [15:0] fifo_wr_data_1,
+  val fifo_wr_data_2 = UInt(16.W)   //  input [15:0] fifo_wr_data_2,
+  val fifo_wr_data_3 = UInt(16.W)   //  input [15:0] fifo_wr_data_3,
+}
+class cpackFifoWrIF_out extends Bundle {
+  val fifo_wr_overflow = Bool()   //  output fifo_wr_overflow,
+}
+class cpackFifoWrIF extends Bundle {
+  val in = Input(new cpackFifoWrIF_in)
+  val out = Output(new cpackFifoWrIF_out)
+}
+//cpackPackedFifoWrIF
+class cpackPackedFifoWrIF_in extends Bundle {
+  val packed_fifo_wr_overflow = Bool()   //  input packed_fifo_wr_overflow,
+}
+class cpackPackedFifoWrIF_out extends Bundle {
+  val packed_fifo_wr_en = Bool()   //  output packed_fifo_wr_en,
+  val packed_fifo_wr_sync = Bool()   //  output packed_fifo_wr_sync,
+  val packed_fifo_wr_data = UInt(64.W)   //  output [63:0] packed_fifo_wr_data
+}
+class cpackPackedFifoWrIF extends Bundle {
+  val in = Input(new cpackPackedFifoWrIF_in)
+  val out = Output(new cpackPackedFifoWrIF_out)
+}
+
+
+
+
+
 
 
 

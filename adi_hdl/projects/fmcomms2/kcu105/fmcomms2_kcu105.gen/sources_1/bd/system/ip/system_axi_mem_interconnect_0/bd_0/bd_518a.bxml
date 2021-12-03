@@ -4,7 +4,7 @@
     <Description>Composite Fileset</Description>
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1638312203"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1638312203"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1638312199"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1638493428"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1638312203"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\bd_518a.v" Type="Verilog">
