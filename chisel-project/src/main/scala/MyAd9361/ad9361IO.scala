@@ -41,3 +41,18 @@ class xilFifoIF extends Bundle {
   val out = Output(new xilFifoIF_out)
 }
 
+class clkIF_in extends Bundle {
+  val reset = Bool()   //  input reset;
+  val clk_from_ad9361 = Bool()   //  input clk_from_ad9361;
+}
+class clkIF_out extends Bundle {
+  val clk_DDR = Bool()   //  output clk_DDR;
+  val clk_DDRn = Bool()   //  output clk_DDRn;
+  val clk_DDR_double = Bool()   //  output clk_DDR_double;
+  val locked = Bool()   //  output locked;
+}
+class clkIF extends Bundle {
+  val in = Input(new clkIF_in)
+  val out = Output(new clkIF_out)
+}
+

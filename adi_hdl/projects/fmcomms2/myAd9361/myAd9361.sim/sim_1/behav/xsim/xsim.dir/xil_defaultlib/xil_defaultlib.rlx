@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/sim/ad9361_fifo.v,1638530847,verilog,,D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v,,ad9361_fifo,,,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen,,,,,
+D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v,1638608928,verilog,,D:/projects/python_project/bbp_.v,,bbp_clk_gen,,,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen,,,,,
+D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v,1638608928,verilog,,D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v,,bbp_clk_gen_clk_wiz,,,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen,,,,,
+D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.srcs/sim_1/new/bbpTB.v,1638661151,verilog,,,,bbpTB,,,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen,,,,,
+D:/projects/python_project/bbp_.v,1638660205,verilog,,D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.srcs/sim_1/new/bbpTB.v,,bbp;rxPath;txPath,,,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen,,,,,

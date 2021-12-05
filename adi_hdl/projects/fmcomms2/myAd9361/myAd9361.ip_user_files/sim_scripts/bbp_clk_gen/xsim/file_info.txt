@@ -1,0 +1,3 @@
+bbp_clk_gen_clk_wiz.v,verilog,xil_defaultlib,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+bbp_clk_gen.v,verilog,xil_defaultlib,../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

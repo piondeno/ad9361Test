@@ -1,0 +1,520 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {bbpTB_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.bbpTB xil_defaultlib.glbl 
+# Start time: 12:07:13 on Dec 05,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2685) [TFMPC] - Too few port connections for 'bbb_test'.  Expected 29, found 6.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_fifo_rst_busy'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_fifo_wr_full'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_fifo_rd_empty'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_txFrame'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_fifo_wr_datain_q'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_fifo_wr_datain_i'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_wr_en'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_tx_wr_clk'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_fifo_rst_busy'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_fifo_wr_full'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_fifo_rd_empty'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_fifo_rd_dataout_q'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_fifo_rd_dataout_i'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rxFrame'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_rd_en'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_rx_rd_clk'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_clk_gen_locked'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_FB_clk'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_pD1_out'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_pD0_out'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_ctrl_out_from'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_pD1_in'.
+# ** Warning: ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'io_pD0_in'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=24.
+# Loading work.bbpTB(fast)
+# Loading work.bbp(fast)
+# Loading work.bbp_clk_gen(fast)
+# Loading work.bbp_clk_gen_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.MMCME4_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.rxPath(fast)
+# Loading work.ad9361_fifo(fast)
+# Loading work.txPath(fast)
+# Loading work.signal_sync_for_diff_clk_domain(fast)
+# Loading work.glbl(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading xpm.vcomponents
+# Loading ieee.numeric_std(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.fifo18e2(fifo18e2_v)#1
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=24.
+# Loading work.bbpTB(fast)
+# Loading work.bbp(fast)
+# Loading work.bbp_clk_gen(fast)
+# Loading work.bbp_clk_gen_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.MMCME4_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.rxPath(fast)
+# Loading work.ad9361_fifo(fast)
+# Loading work.txPath(fast)
+# Loading work.signal_sync_for_diff_clk_domain(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=24.
+# Loading work.bbpTB(fast)
+# Loading work.bbp(fast)
+# Loading work.bbp_clk_gen(fast)
+# Loading work.bbp_clk_gen_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.MMCME4_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.rxPath(fast)
+# Loading work.ad9361_fifo(fast)
+# Loading work.txPath(fast)
+# Loading work.signal_sync_for_diff_clk_domain(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: $stop    : ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(66)
+#    Time: 25200 ns  Iteration: 0  Instance: /bbpTB
+# Break in Module bbpTB at ../../../../myAd9361.srcs/sim_1/new/bbpTB.v line 66
+add wave -position end  sim:/bbpTB/bbb_test/u_sign_sync_0/io_sync_clk
+add wave -position end  sim:/bbpTB/bbb_test/u_sign_sync_0/io_sig_in
+add wave -position end  sim:/bbpTB/bbb_test/u_sign_sync_0/io_sig_out
+add wave -position end  sim:/bbpTB/bbb_test/u_sign_sync_0/reg_sync_0
+add wave -position end  sim:/bbpTB/bbb_test/u_sign_sync_0/reg_sync_1
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=24.
+# Loading work.bbpTB(fast)
+# Loading work.bbp(fast)
+# Loading work.bbp_clk_gen(fast)
+# Loading work.bbp_clk_gen_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.MMCME4_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.rxPath(fast)
+# Loading work.ad9361_fifo(fast)
+# Loading work.txPath(fast)
+# Loading work.signal_sync_for_diff_clk_domain(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_txPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_q/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: Actual FIFO Depth = 1025
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+#    Time: 0 ps  Iteration: 0  Protected: /bbpTB/bbb_test/u_rxPath_i/u_ad9361_fifo/inst/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>
+# ** Note: $stop    : ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(66)
+#    Time: 25200 ns  Iteration: 0  Instance: /bbpTB
+# Break in Module bbpTB at ../../../../myAd9361.srcs/sim_1/new/bbpTB.v line 66
+# End time: 20:48:47 on Dec 05,2021, Elapsed time: 8:41:34
+# Errors: 0, Warnings: 64

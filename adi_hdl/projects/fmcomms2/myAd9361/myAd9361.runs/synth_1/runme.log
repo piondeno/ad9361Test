@@ -1,0 +1,71 @@
+
+*** Running vivado
+    with args -log bbp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bbp.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bbp.tcl -notrace
+Command: synth_design -top bbp -part xcvu9p-flga2104-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11556
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1715.957 ; gain = 264.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bbp' [D:/projects/python_project/bbp_.v:209]
+INFO: [Synth 8-6157] synthesizing module 'bbp_clk_gen' [D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/synth_1/.Xil/Vivado-8292-DESKTOP-6IT4G6N/realtime/bbp_clk_gen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bbp_clk_gen' (1#1) [D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/synth_1/.Xil/Vivado-8292-DESKTOP-6IT4G6N/realtime/bbp_clk_gen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rxPath' [D:/projects/python_project/bbp_.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad9361_fifo' [D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/synth_1/.Xil/Vivado-8292-DESKTOP-6IT4G6N/realtime/ad9361_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ad9361_fifo' (2#1) [D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/synth_1/.Xil/Vivado-8292-DESKTOP-6IT4G6N/realtime/ad9361_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rxPath' (3#1) [D:/projects/python_project/bbp_.v:1]
+INFO: [Synth 8-6157] synthesizing module 'txPath' [D:/projects/python_project/bbp_.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'txPath' (4#1) [D:/projects/python_project/bbp_.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'bbp' (5#1) [D:/projects/python_project/bbp_.v:209]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1765.914 ; gain = 314.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1783.844 ; gain = 332.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1783.844 ; gain = 332.480
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1783.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_rxPath_i/u_ad9361_fifo'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_rxPath_i/u_ad9361_fifo'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_rxPath_q/u_ad9361_fifo'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_rxPath_q/u_ad9361_fifo'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_txPath_i/u_ad9361_fifo'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_txPath_i/u_ad9361_fifo'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_txPath_q/u_ad9361_fifo'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/ad9361_fifo/ad9361_fifo/ad9361_fifo_in_context.xdc] for cell 'u_txPath_q/u_ad9361_fifo'
+Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen/bbp_clk_gen_in_context.xdc] for cell 'u_bbp_clk_gen'
+Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen/bbp_clk_gen_in_context.xdc] for cell 'u_bbp_clk_gen'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1913.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1913.082 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '7.692' specified during out-of-context synthesis of instance 'u_rxPath_i/u_ad9361_fifo' at clock pin 'wr_clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '7.692' specified during out-of-context synthesis of instance 'u_rxPath_q/u_ad9361_fifo' at clock pin 'wr_clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '7.692' specified during out-of-context synthesis of instance 'u_txPath_i/u_ad9361_fifo' at clock pin 'rd_clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '7.692' specified during out-of-context synthesis of instance 'u_txPath_q/u_ad9361_fifo' at clock pin 'rd_clk' is different from the actual clock period '5.000', this can lead to different synthesis results.

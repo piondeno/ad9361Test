@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ad9361_fifo_synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1638530848">
+  <File Type="PA-TCL" Name="ad9361_fifo.tcl"/>
+  <File Type="REPORTS-TCL" Name="ad9361_fifo_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ad9361_fifo.vds"/>
+  <File Type="RDS-UTIL" Name="ad9361_fifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ad9361_fifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ad9361_fifo.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ad9361_fifo">
+    <File Path="$PSRCDIR/sources_1/ip/ad9361_fifo/ad9361_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ad9361_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ad9361_fifo">
+    <File Path="$PSRCDIR/sources_1/ip/ad9361_fifo/ad9361_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ad9361_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

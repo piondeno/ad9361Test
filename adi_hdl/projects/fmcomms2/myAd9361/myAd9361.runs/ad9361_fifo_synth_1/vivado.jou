@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Dec  3 19:27:33 2021
+# Process ID: 25016
+# Current directory: D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/ad9361_fifo_synth_1
+# Command line: vivado.exe -log ad9361_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ad9361_fifo.tcl
+# Log file: D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/ad9361_fifo_synth_1/ad9361_fifo.vds
+# Journal file: D:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.runs/ad9361_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ad9361_fifo.tcl -notrace

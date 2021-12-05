@@ -1,0 +1,244 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/adi_hdl/projects/fmcomms2/myAd9361/myAd9361.sim/sim_1/behav/modelsim
+T_opt
+!s110 1638677234
+VNHmLUABAP>@kA@3TFemlS1
+04 5 4 work bbpTB fast 0
+04 4 4 work glbl fast 0
+=1-f889d260c0e5-61ac3af2-89-2260
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vad9361_fifo
+!s10a 1638530847
+Z2 !s110 1638667117
+!i10b 1
+!s100 >I4Bi<X:bK4<VN[z76Z?`1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[`J<RfYanZZVz@TPbLkRO2
+R0
+w1638530847
+8../../../../myAd9361.gen/sources_1/ip/ad9361_fifo/sim/ad9361_fifo.v
+F../../../../myAd9361.gen/sources_1/ip/ad9361_fifo/sim/ad9361_fifo.v
+!i122 0
+L0 56 473
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1638667117.000000
+Z7 !s107 ../../../../myAd9361.srcs/sim_1/new/bbpTB.v|../../../../../../../../python_project/bbp_.v|../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v|../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v|../../../../myAd9361.gen/sources_1/ip/ad9361_fifo/sim/ad9361_fifo.v|
+Z8 !s90 -incr|-mfcu|-work|xil_defaultlib|+incdir+../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen|../../../../myAd9361.gen/sources_1/ip/ad9361_fifo/sim/ad9361_fifo.v|../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v|../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v|../../../../../../../../python_project/bbp_.v|../../../../myAd9361.srcs/sim_1/new/bbpTB.v|
+!i113 0
+Z9 o-mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 -mfcu -work xil_defaultlib +incdir+../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vbbp
+Z11 !s110 1638677227
+!i10b 1
+!s100 ]=75]`:8_Q@9AnS`K;DBZ1
+R3
+I_SD<8NKk5zNcOh9X?3Hk02
+R0
+Z12 w1638675574
+Z13 8../../../../../../../../python_project/bbp_.v
+Z14 F../../../../../../../../python_project/bbp_.v
+!i122 11
+L0 289 205
+R4
+R5
+r1
+!s85 0
+31
+Z15 !s108 1638677227.000000
+R7
+R8
+!i113 0
+R9
+R10
+R1
+vbbp_clk_gen
+Z16 !s10a 1638608928
+R2
+!i10b 1
+!s100 iglc68Gi5ZP@>XZb5<1_^3
+R3
+IK5lf:SMX3lKSgl7MQP;162
+R0
+Z17 w1638608928
+8../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v
+F../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v
+!i122 0
+L0 72 27
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+vbbp_clk_gen_clk_wiz
+R16
+R2
+!i10b 1
+!s100 E_h?k0S^E><LbaG71EBoK0
+R3
+If]K0hlGAZ@KXnZOfe1JUO3
+R0
+R17
+8../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v
+F../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v
+!i122 0
+L0 70 150
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+vbbpTB
+R11
+!i10b 1
+!s100 XM_ikHh8^KTSb7S7iLoST0
+R3
+IbLSYPJ=WDIAkPfU7jzUZL0
+R0
+w1638677205
+8../../../../myAd9361.srcs/sim_1/new/bbpTB.v
+F../../../../myAd9361.srcs/sim_1/new/bbpTB.v
+!i122 11
+L0 23 49
+R4
+R5
+r1
+!s85 0
+31
+R15
+R7
+R8
+!i113 0
+R9
+R10
+R1
+nbbp@t@b
+vglbl
+R11
+!i10b 1
+!s100 ZHmTNm_h3dd`6mIQLzSUN3
+R3
+IJT>_:<WW6a7KP^k3<8E3=1
+R0
+w1623370582
+8glbl.v
+Fglbl.v
+!i122 12
+L0 6 78
+R4
+R5
+r1
+!s85 0
+31
+R15
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vrxPath
+Z18 !s10a 1638675574
+R2
+!i10b 1
+!s100 Q?njgLo9AE_KS;m?VAR@n2
+R3
+ISUWGfGWS0C3T4idQgaV]>3
+R0
+Z19 w1638660205
+R13
+R14
+!i122 0
+L0 1 107
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+nrx@path
+vsignal_sync_for_diff_clk_domain
+R11
+!i10b 1
+!s100 HHXV>`nfFmj_`[VM1V6nc0
+R3
+I4XX0ndEeR2bSKWA<GZATF0
+R0
+R12
+R13
+R14
+!i122 11
+L0 209 80
+R4
+R5
+r1
+!s85 0
+31
+R15
+R7
+R8
+!i113 0
+R9
+R10
+R1
+vtxPath
+R18
+R2
+!i10b 1
+!s100 iTn`07I^R4XVA`nz4bW5O0
+R3
+I6hf``2oALkP8@f15?`hC>2
+R0
+R19
+R13
+R14
+!i122 0
+L0 108 101
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+ntx@path

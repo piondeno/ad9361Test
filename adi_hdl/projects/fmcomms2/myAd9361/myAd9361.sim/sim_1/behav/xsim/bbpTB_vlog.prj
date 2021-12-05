@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen" \
+"../../../../myAd9361.gen/sources_1/ip/ad9361_fifo/sim/ad9361_fifo.v" \
+"../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen_clk_wiz.v" \
+"../../../../myAd9361.gen/sources_1/ip/bbp_clk_gen/bbp_clk_gen.v" \
+"../../../../../../../../python_project/bbp_.v" \
+"../../../../myAd9361.srcs/sim_1/new/bbpTB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

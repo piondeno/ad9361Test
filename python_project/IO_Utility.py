@@ -239,7 +239,7 @@ def IO_verilogToChiselV2():
 Shrink the instantiate verilog port name for instantiate chisel blockbox module
 '''
 def shrinkPortNameForChiselBlockBox():
-    fileName = "UseDut.v"
+    fileName = "bbp.v"
     temp = fileName.split('.')
     outputFileName = temp[0] + "_.v"
     output_f = open(outputFileName,"w")
@@ -259,7 +259,7 @@ def shrinkPortNameForChiselBlockBox():
                 temp = line.split('__out_')
                 cond_str = '__out_'
             else:
-                print(line)
+                output_f.write(line)
                 continue
 
             firstElement = temp[0].split('.')
@@ -271,5 +271,5 @@ def shrinkPortNameForChiselBlockBox():
 
 if __name__ == '__main__':
     #IO_verilogToChisel()
-    IO_verilogToChiselV2()
-    #shrinkPortNameForChiselBlockBox()
+    #IO_verilogToChiselV2()
+    shrinkPortNameForChiselBlockBox()
