@@ -1,0 +1,59 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../library/common/ad_addsub.v" \
+"../../../../../../library/xilinx/common/ad_data_clk.v" \
+"../../../../../../library/xilinx/common/ad_data_in.v" \
+"../../../../../../library/xilinx/common/ad_data_out.v" \
+"../../../../../../library/common/ad_datafmt.v" \
+"../../../../../../library/xilinx/common/ad_dcfilter.v" \
+"../../../../../../library/common/ad_dds.v" \
+"../../../../../../library/common/ad_dds_1.v" \
+"../../../../../../library/common/ad_dds_2.v" \
+"../../../../../../library/common/ad_dds_cordic_pipe.v" \
+"../../../../../../library/common/ad_dds_sine.v" \
+"../../../../../../library/common/ad_dds_sine_cordic.v" \
+"../../../../../../library/common/ad_iqcor.v" \
+"../../../../../../library/common/ad_mem.v" \
+"../../../../../../library/xilinx/common/ad_mul.v" \
+"../../../../../../library/common/ad_perfect_shuffle.v" \
+"../../../../../../library/common/ad_pnmon.v" \
+"../../../../../../library/common/ad_pps_receiver.v" \
+"../../../../../../library/common/ad_rst.v" \
+"../../../../../../library/common/ad_tdd_control.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361.v" \
+"../../../../../../library/axi_ad9361/xilinx/axi_ad9361_cmos_if.v" \
+"../../../../../../library/axi_ad9361/xilinx/axi_ad9361_lvds_if.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_rx.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_rx_channel.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_rx_pnmon.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_tdd.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_tdd_if.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_tx.v" \
+"../../../../../../library/axi_ad9361/axi_ad9361_tx_channel.v" \
+"../../../../../../library/util_pack/util_pack_common/pack_ctrl.v" \
+"../../../../../../library/util_pack/util_pack_common/pack_interconnect.v" \
+"../../../../../../library/util_pack/util_pack_common/pack_network.v" \
+"../../../../../../library/util_pack/util_pack_common/pack_shell.v" \
+"../../../../../../library/common/up_adc_channel.v" \
+"../../../../../../library/common/up_adc_common.v" \
+"../../../../../../library/common/up_axi.v" \
+"../../../../../../library/common/up_clock_mon.v" \
+"../../../../../../library/common/up_dac_channel.v" \
+"../../../../../../library/common/up_dac_common.v" \
+"../../../../../../library/common/up_delay_cntrl.v" \
+"../../../../../../library/common/up_tdd_cntrl.v" \
+"../../../../../../library/common/up_xfer_cntrl.v" \
+"../../../../../../library/common/up_xfer_status.v" \
+"../../../../../../library/util_pack/util_cpack2/util_cpack2.v" \
+"../../../../../../library/util_pack/util_cpack2/util_cpack2_impl.v" \
+"../../../../../../library/util_rfifo/util_rfifo.v" \
+"../../../../../../library/util_pack/util_upack2/util_upack2.v" \
+"../../../../../../library/util_pack/util_upack2/util_upack2_impl.v" \
+"../../../../../../library/util_wfifo/util_wfifo.v" \
+"../../../../../../../python_project/UseDut_.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,105 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_addsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/xilinx/common/ad_data_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_data_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/xilinx/common/ad_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_data_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/xilinx/common/ad_data_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_data_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_datafmt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_datafmt
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/xilinx/common/ad_dcfilter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dcfilter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_dds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_dds_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dds_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_dds_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dds_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_dds_cordic_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dds_cordic_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_dds_sine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dds_sine
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_dds_sine_cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_dds_sine_cordic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_iqcor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_iqcor
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/xilinx/common/ad_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_perfect_shuffle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_perfect_shuffle
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_pnmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_pnmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_pps_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_pps_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/ad_tdd_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_tdd_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/xilinx/axi_ad9361_cmos_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_cmos_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/xilinx/axi_ad9361_lvds_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_lvds_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_rx_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_rx_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_rx_pnmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_rx_pnmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_tdd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_tdd
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_tdd_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_tdd_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_tx
+INFO: [VRFC 10-2458] undeclared symbol dac_sync, assumed default net type wire [F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_tx.v:378]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/axi_ad9361/axi_ad9361_tx_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ad9361_tx_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_pack_common/pack_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_pack_common/pack_interconnect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_interconnect
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_pack_common/pack_network.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_network
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_pack_common/pack_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_shell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_adc_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_adc_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_adc_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_adc_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_clock_mon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_clock_mon
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_dac_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_dac_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_dac_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_dac_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_delay_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_delay_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_tdd_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_tdd_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_xfer_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_xfer_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/common/up_xfer_status.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_xfer_status
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_cpack2/util_cpack2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_cpack2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_cpack2/util_cpack2_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_cpack2_impl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_rfifo/util_rfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_rfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_upack2/util_upack2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_upack2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_pack/util_upack2/util_upack2_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_upack2_impl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/library/util_wfifo/util_wfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module util_wfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/python_project/UseDut_.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UseDut
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projects/ad9361Test/adi_hdl/projects/myAd9361/myAd9361.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

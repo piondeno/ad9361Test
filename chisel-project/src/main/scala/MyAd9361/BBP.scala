@@ -32,6 +32,7 @@ class rxPath extends RawModule {
     val rxFrame = Input(Bool())
     val rd_en = Input(Bool())
     val dataIn = Input(UInt(12.W))
+    val fifo_srst = Input(Bool()) // sync with wr_clk
 
     val dataOut = Output(UInt(12.W))
     val full = Output(Bool())
@@ -40,18 +41,29 @@ class rxPath extends RawModule {
   })
 
   val u_ad9361_fifo = Module(new ad9361_fifo)
-  withClockAndReset(io.FB_clk_double,!(io.enable && (!io.txnrx))){
-    val startFlag = RegInit(Bool(),false.B)
-    when(io.enable && (!io.txnrx) && io.rxFrame){
+  val startFlag_rstn = WireDefault(io.enable && (!io.txnrx))
+
+  val fifo_rst_pulse = Wire(Bool())
+
+  //wait for first rxFrame signal
+  withClock(io.FB_clk_double){
+    val startFlag = Reg(Bool())
+    when(!startFlag_rstn) {
+      startFlag := false.B
+    }.elsewhen(io.rxFrame){
       startFlag := true.B
-      val rxPeriod = WireDefault(Bool(),startFlag||io.rxFrame)
-      u_ad9361_fifo.io.xilFifoIF_.in.wr_en := rxPeriod
+    }.otherwise{
+      startFlag := startFlag
     }
+    u_ad9361_fifo.io.xilFifoIF_.in.wr_en := startFlag || io.rxFrame
+
+    val fifo_rst_delay = RegNext(io.fifo_srst) //wr_clk is io.FB_clk_double
+    fifo_rst_pulse := io.fifo_srst && (!fifo_rst_delay)
   }
 
   u_ad9361_fifo.io.xilFifoIF_.in.din := io.dataIn
   u_ad9361_fifo.io.xilFifoIF_.in.wr_clk := io.FB_clk_double.asBool()
-  u_ad9361_fifo.io.xilFifoIF_.in.srst := io.txnrx
+  u_ad9361_fifo.io.xilFifoIF_.in.srst := fifo_rst_pulse
   u_ad9361_fifo.io.xilFifoIF_.in.rd_clk := io.rd_clk
   u_ad9361_fifo.io.xilFifoIF_.in.rd_en := io.rd_en
 
@@ -60,7 +72,6 @@ class rxPath extends RawModule {
   io.empty := u_ad9361_fifo.io.xilFifoIF_.out.empty
   io.dataOut := u_ad9361_fifo.io.xilFifoIF_.out.dout
 }
-
 
 /*
 class rxPath extends RawModule {
@@ -118,6 +129,7 @@ class txPath extends RawModule {
     val FB_clk_double = Input(Clock()) // the rate is double of FB_clk
     val wr_en = Input(Bool())
     val dataIn = Input(UInt(12.W))
+    val fifo_srst = Input(Bool()) // sync with wr_clk
 
     val txFrame = Output(Bool())
     val dataOut = Output(UInt(12.W))
@@ -138,10 +150,17 @@ class txPath extends RawModule {
       }
     io.txFrame := txFrameReg
   }
+
+  val fifo_rst_pulse = Wire(Bool())
+  withClock(io.wr_clk.asClock()) {
+    val fifo_rst_delay = RegNext(!io.txnrx)
+    fifo_rst_pulse := (!io.txnrx) && (!fifo_rst_delay)
+  }
+
   u_ad9361_fifo.io.xilFifoIF_.in.wr_clk := io.wr_clk
   u_ad9361_fifo.io.xilFifoIF_.in.din := io.dataIn
   u_ad9361_fifo.io.xilFifoIF_.in.wr_en := io.wr_en
-  u_ad9361_fifo.io.xilFifoIF_.in.srst := !io.txnrx
+  u_ad9361_fifo.io.xilFifoIF_.in.srst := fifo_rst_pulse
   io.fifo_full := u_ad9361_fifo.io.xilFifoIF_.out.full
   io.fifo_empty := u_ad9361_fifo.io.xilFifoIF_.out.empty
   io.fifo_rst_busy := u_ad9361_fifo.io.xilFifoIF_.out.wr_rst_busy || u_ad9361_fifo.io.xilFifoIF_.out.rd_rst_busy
@@ -231,6 +250,7 @@ class bbp extends RawModule{
   //wire connection for rx path
   u_rxPath_i.io.enable := enable_sync
   u_rxPath_i.io.txnrx := txnrx_sync
+  u_rxPath_i.io.fifo_srst := txnrx_sync
   u_rxPath_i.io.FB_clk_double := u_bbp_clk_gen.io.clkIF_.out.clk_DDR_double.asClock()
   u_rxPath_i.io.rd_clk := io.rx_rd_clk
   u_rxPath_i.io.rxFrame := io.rxFrame
@@ -240,6 +260,7 @@ class bbp extends RawModule{
 
   u_rxPath_q.io.enable := enable_sync
   u_rxPath_q.io.txnrx := txnrx_sync
+  u_rxPath_q.io.fifo_srst := txnrx_sync
   u_rxPath_q.io.FB_clk_double := u_bbp_clk_gen.io.clkIF_.out.clk_DDR_double.asClock()
   u_rxPath_q.io.rd_clk := io.rx_rd_clk
   u_rxPath_q.io.rxFrame := io.rxFrame
@@ -254,6 +275,7 @@ class bbp extends RawModule{
   //wire connection for tx path
   u_txPath_i.io.enable := enable_sync
   u_txPath_i.io.txnrx := txnrx_sync
+  u_txPath_i.io.fifo_srst := !io.txnrx //becuase sync with wr_clk
   u_txPath_i.io.FB_clk_double := u_bbp_clk_gen.io.clkIF_.out.clk_DDR_double.asClock()
   u_txPath_i.io.wr_clk := io.tx_wr_clk
   u_txPath_i.io.wr_en := io.tx_wr_en
@@ -262,6 +284,7 @@ class bbp extends RawModule{
 
   u_txPath_q.io.enable := enable_sync
   u_txPath_q.io.txnrx := txnrx_sync
+  u_txPath_q.io.fifo_srst := !io.txnrx //becuase sync with wr_clk
   u_txPath_q.io.FB_clk_double := u_bbp_clk_gen.io.clkIF_.out.clk_DDR_double.asClock()
   u_txPath_q.io.wr_clk := io.tx_wr_clk
   u_txPath_q.io.wr_en := io.tx_wr_en
