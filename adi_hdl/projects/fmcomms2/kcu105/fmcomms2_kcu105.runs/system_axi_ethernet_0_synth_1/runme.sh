@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx_/Vivado/2021.1/ids_lite/ISE/bin/nt64;C:/Xilinx_/Vivado/2021.1/ids_lite/ISE/lib/nt64:C:/Xilinx_/Vivado/2021.1/bin
+  PATH=D:/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2021.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2021.1/bin
 else
-  PATH=C:/Xilinx_/Vivado/2021.1/ids_lite/ISE/bin/nt64;C:/Xilinx_/Vivado/2021.1/ids_lite/ISE/lib/nt64:C:/Xilinx_/Vivado/2021.1/bin:$PATH
+  PATH=D:/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2021.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2021.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ethernet_0_synth_1'
+HD_PWD='F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/system_axi_ethernet_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

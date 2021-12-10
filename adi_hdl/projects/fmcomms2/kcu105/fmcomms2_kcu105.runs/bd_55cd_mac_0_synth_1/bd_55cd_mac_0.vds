@@ -2,19 +2,20 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Nov 30 22:46:24 2021
-# Process ID: 19412
-# Current directory: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1
+# Start of session at: Wed Dec  8 11:14:24 2021
+# Process ID: 1544
+# Current directory: F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1
 # Command line: vivado.exe -log bd_55cd_mac_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_55cd_mac_0.tcl
-# Log file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.vds
-# Journal file: D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1\vivado.jou
+# Log file: F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.vds
+# Journal file: F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source bd_55cd_mac_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/projects/adi_hdl/library'.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/projects/ghdl/library'; Can't find the specified path.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projects/ad9361Test/adi_hdl/library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/projects/ad9361Test/ghdl/library'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'analog.com:user:axi_ad9361:1.0'. The one found in IP location 'f:/projects/ad9361Test/adi_hdl/library/axi_ad9361' will take precedence over the same IP in location f:/projects/ad9361Test/adi_hdl/library/axi_ad9361_ryan
 Command: synth_design -top bd_55cd_mac_0 -part xcku040-ffva1156-2-e -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
@@ -22,100 +23,100 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19416
+INFO: [Synth 8-7075] Helper process launched with PID 14896
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1266.352 ; gain = 125.371
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1252.246 ; gain = 113.875
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.v:67]
-INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0_block' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_block.v:113]
-INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_wrapper' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_wrapper.v:75]
-INFO: [Synth 8-638] synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_top' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_top.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (1#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (2#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (3#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-256] done synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_top' (4#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_top.vhd:107]
-INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_wrapper' (5#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_wrapper.v:75]
-INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0_vector_decode' [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/statistics/bd_55cd_mac_0_vector_decode.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0_vector_decode' (6#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/statistics/bd_55cd_mac_0_vector_decode.v:70]
-INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4' (22#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (22#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (22#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (22#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (22#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
-INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
-INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (38#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
-INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized0' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
-INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized0' (38#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
-INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized1' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
-INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized1' (39#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
-INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3' (40#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (40#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (40#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (40#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
-INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961]
-INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (41#1) [C:/Xilinx_/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961]
-INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0_block' (45#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_block.v:113]
-INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0' (46#1) [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.v:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.v:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0_block' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_block.v:113]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_wrapper' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-638] synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_top' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_top.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (1#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (2#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (3#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_top' (4#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_top.vhd:107]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0_axi4_lite_ipif_wrapper' (5#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-6157] synthesizing module 'bd_55cd_mac_0_vector_decode' [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/statistics/bd_55cd_mac_0_vector_decode.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0_vector_decode' (6#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/statistics/bd_55cd_mac_0_vector_decode.v:70]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (22#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (22#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (22#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (22#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (22#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (35#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized0' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized0' (35#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized1' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized1' (36#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93504]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (37#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (37#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (37#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (37#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (38#1) [D:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0_block' (42#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_block.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'bd_55cd_mac_0' (43#1) [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.v:67]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1406.453 ; gain = 265.473
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1387.113 ; gain = 248.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1406.453 ; gain = 265.473
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1387.113 ; gain = 248.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1406.453 ; gain = 265.473
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1387.113 ; gain = 248.742
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 1406.453 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 300 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1387.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_board.xdc] for cell 'inst'
-Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_board.xdc] for cell 'inst'
-Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc] for cell 'inst'
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:61]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:63]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:65]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:67]
-Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_mac_0_propImpl.xdc].
+Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_board.xdc] for cell 'inst'
+Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:61]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:63]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:65]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:67]
+Finished Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_mac_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_55cd_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/dont_touch.xdc]
-Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc] for cell 'inst'
-Finished Parsing XDC File [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_mac_0_propImpl.xdc].
+Parsing XDC File [F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/dont_touch.xdc]
+Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_55cd_mac_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_55cd_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1511.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1487.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 160 instances were transformed.
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1513.543 ; gain = 1.867
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1489.445 ; gain = 1.914
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1513.543 ; gain = 372.562
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1489.445 ; gain = 351.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -123,14 +124,14 @@ Start Loading Part and Timing Information
 Loading part: xcku040-ffva1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1513.543 ; gain = 372.562
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1489.445 ; gain = 351.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/dont_touch.xdc, line 6).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1513.543 ; gain = 372.562
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1489.445 ; gain = 351.074
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_19_tx_axi_intf'
@@ -200,7 +201,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_19_pfc_tx_cntl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1513.543 ; gain = 372.562
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1489.445 ; gain = 351.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -221,26 +222,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1513.543 ; gain = 372.562
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1489.445 ; gain = 351.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 40 of d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc. [d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:40]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 40 of f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc. [f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc:40]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1553.801 ; gain = 412.820
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:56 . Memory (MB): peak = 1541.379 ; gain = 403.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1652.492 ; gain = 511.512
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1636.305 ; gain = 497.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -257,38 +258,40 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin txgen/CRC_CE_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin rxgen/CRC_CE_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:07 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:07 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -305,50 +308,47 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |CARRY8   |    11|
-|2     |LUT1     |   607|
-|3     |LUT2     |   303|
-|4     |LUT3     |   276|
-|5     |LUT4     |   278|
-|6     |LUT5     |   303|
-|7     |LUT6     |   513|
-|8     |MUXCY    |    70|
-|9     |MUXF7    |    10|
-|10    |RAM64X1D |   160|
-|11    |SRL16E   |    24|
-|12    |XORCY    |    70|
-|13    |FDCE     |   107|
-|14    |FDPE     |    20|
-|15    |FDRE     |  2610|
-|16    |FDSE     |   138|
+|2     |LUT1     |   603|
+|3     |LUT2     |   283|
+|4     |LUT3     |   274|
+|5     |LUT4     |   270|
+|6     |LUT5     |   309|
+|7     |LUT6     |   508|
+|8     |MUXF7    |    10|
+|9     |RAM64X1D |   160|
+|10    |SRL16E   |    24|
+|11    |FDCE     |    25|
+|12    |FDPE     |    20|
+|13    |FDRE     |  2529|
+|14    |FDSE     |   138|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1646.344 ; gain = 507.973
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1662.539 ; gain = 414.469
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1662.539 ; gain = 521.559
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 1646.344 ; gain = 405.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1646.344 ; gain = 507.973
 INFO: [Project 1-571] Translating synthesized netlist
 WARNING: [Synth 37-28] Duplicate attribute 'INIT' found for instance 'update_pause_ad_int_reg' of module 'FDRE'.
 Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1662.539 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1646.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1680.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1664.426 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 172 instances were transformed.
-  (CARRY4) => CARRY8: 12 instances
+  A total of 160 instances were transformed.
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
 
-Synth Design complete, checksum: 187bba00
+Synth Design complete, checksum: 7139d1cf
 INFO: [Common 17-83] Releasing license: Synthesis
-77 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+79 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1680.672 ; gain = 539.691
-INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_55cd_mac_0, cache-ID = 5c2622bced5477f4
-INFO: [Coretcl 2-1174] Renamed 179 cell refs.
-INFO: [Common 17-1381] The checkpoint 'D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 1664.426 ; gain = 526.055
+INFO: [Common 17-1381] The checkpoint 'F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_55cd_mac_0, cache-ID = 7d4335e4959faa20
+INFO: [Coretcl 2-1174] Renamed 163 cell refs.
+INFO: [Common 17-1381] The checkpoint 'F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bd_55cd_mac_0_utilization_synth.rpt -pb bd_55cd_mac_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 30 22:47:55 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 11:15:57 2021...

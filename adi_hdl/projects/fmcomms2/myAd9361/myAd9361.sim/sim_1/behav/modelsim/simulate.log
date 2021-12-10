@@ -530,3 +530,5 @@ run -all
 # ** Note: $stop    : ../../../../myAd9361.srcs/sim_1/new/bbpTB.v(107)
 #    Time: 25200 ns  Iteration: 0  Instance: /bbpTB
 # Break in Module bbpTB at ../../../../myAd9361.srcs/sim_1/new/bbpTB.v line 107
+# End time: 18:41:58 on Dec 06,2021, Elapsed time: 2:32:25
+# Errors: 0, Warnings: 57

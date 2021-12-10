@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.tcl"
+  variable script "F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "bd_55cd_mac_0_synth_1" START { ROLLUP_AUTO }
-set_param messaging.defaultLimit 2000
-set_msg_config -id {33-285} -limit 100
 set_msg_config  -id {Vivado 12-1790}  -string {{Evaluation} {features} {should} {NOT} {be} {used} {in} {production} {systems.}}  -new_severity {WARNING} 
 set_msg_config  -id {Designutils 20-3303}  -string {{HDPYFinalizeIO}}  -new_severity {INFO} 
 set_msg_config  -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} 
@@ -95,26 +93,26 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.cache/wt [current_project]
-set_property parent.project_path D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.xpr [current_project]
+set_property webtalk.parent_dir F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.cache/wt [current_project]
+set_property parent.project_path F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kcu105:part0:1.7 [current_project]
 set_property ip_repo_paths {
-  d:/projects/adi_hdl/library
-  d:/projects/ghdl/library
+  f:/projects/ad9361Test/adi_hdl/library
+  f:/projects/ad9361Test/ghdl/library
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/projects/adi_hdl/ipcache [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0.xci
-set_property used_in_implementation false [get_files -all d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc]
-set_property used_in_implementation false [get_files -all d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc]
+read_ip -quiet f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0.xci
+set_property used_in_implementation false [get_files -all f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0.xdc]
+set_property used_in_implementation false [get_files -all f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/synth/bd_55cd_mac_0_clocks.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -130,7 +128,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cached_ip [config_ip_cache -export -no_bom  -dir D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1 -new_name bd_55cd_mac_0 -ip [get_ips bd_55cd_mac_0]]
+set cached_ip [config_ip_cache -export -no_bom  -dir F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1 -new_name bd_55cd_mac_0 -ip [get_ips bd_55cd_mac_0]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cached_ip eq {} } {
@@ -185,32 +183,32 @@ create_report "bd_55cd_mac_0_synth_1_synth_report_utilization_0" "report_utiliza
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0.dcp
+  file copy -force F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.v
+  write_verilog -force -mode synth_stub f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.vhdl
+  write_vhdl -force -mode synth_stub f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.v
+  write_verilog -force -mode funcsim f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -220,47 +218,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0.dcp
+  file copy -force F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0.dcp f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_stub.v d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.v
+  file rename -force F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_stub.v f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_stub.vhdl d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.vhdl
+  file rename -force F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_stub.vhdl f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_sim_netlist.v d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.v
+  file rename -force F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_sim_netlist.v f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_sim_netlist.vhdl d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.vhdl
+  file rename -force F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.runs/bd_55cd_mac_0_synth_1/bd_55cd_mac_0_sim_netlist.vhdl f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0]} {
+if {[file isdir F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0]} {
   catch { 
-    file copy -force d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.v D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0
+    file copy -force f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.v F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0
   }
 }
 
-if {[file isdir D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0]} {
+if {[file isdir F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0]} {
   catch { 
-    file copy -force d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.vhdl D:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0
+    file copy -force f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/bd_0/ip/ip_1/bd_55cd_mac_0_stub.vhdl F:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.ip_user_files/ip/bd_55cd_mac_0
   }
 }
 file delete __synthesis_is_running__

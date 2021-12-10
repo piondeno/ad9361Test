@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:d:/projects/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/synth/system_axi_ethernet_0.xdc rfile:../../../fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/synth/system_axi_ethernet_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:f:/projects/ad9361Test/adi_hdl/projects/fmcomms2/kcu105/fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/synth/system_axi_ethernet_0.xdc rfile:../../../fmcomms2_kcu105.gen/sources_1/bd/system/ip/system_axi_ethernet_0/synth/system_axi_ethernet_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -scope -quiet -type CDC -id {CDC-1} -user "axi_ethernet" -tags "11999" -desc "Control register o/p expected to be static during MAC operations and thus a false path for all practical purposes and thus can be ignored" -from [get_pins -of [get_cells -hier -filter {name =~ */speed_host.speed_is_10_100_reg*}] -filter {name =~ *C}]
