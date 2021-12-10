@@ -3,6 +3,7 @@ package MyAd9361
 import chisel3._
 import chisel3.util._
 import ryan_util.signal_sync_for_diff_clk_domain
+import chisel3.experimental.DataMirror
 
 /*
 Please refer to AD9361 Reference Manual UG-570
@@ -137,6 +138,10 @@ class txPath extends RawModule {
     val fifo_empty = Output(Bool())
     val fifo_rst_busy = Output(Bool())
   })
+
+  println("Hi")
+  if (DataMirror.directionOf(io.enable)== ActualDirection.Input)
+    print("yes")
 
   val u_ad9361_fifo = Module(new ad9361_fifo)
 
