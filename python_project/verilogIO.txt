@@ -1,6 +1,11 @@
-  output clk_DDR;
-  output clk_DDRn;
-  output clk_DDR_double;
-  input reset;
-  output locked;
-  input clk_from_ad9361;
+input   [31:0]  apb_uart_paddr;            
+input           apb_uart_penable;          
+input           apb_uart_psel;             
+input   [31:0]  apb_uart_pwdata;           
+input           apb_uart_pwrite;           
+input           rst_b;                     
+input           s_in;                      
+input           sys_clk;                   
+output          s_out;                     
+output  [31:0]  uart_apb_prdata;           
+output          uart_vic_int;    

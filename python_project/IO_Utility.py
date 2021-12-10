@@ -2,7 +2,66 @@
 transfer the verilog IO define to chisel Bundle class
 '''
 
-def IO_verilogToChisel():
+'''
+IO_verilogToChiselV0
+不區分input or output
+'''
+def IO_verilogToChiselV0():
+    fileName = "verilogIO.txt"
+    className = input('Please input the class name for Bundle : ')
+
+    portList = []
+    with open(fileName) as f:
+        for line in f:
+            temp = line.replace('\n','').replace(',','').replace(';','').split('[')
+            temp_cat = ''
+            for element in temp:
+                if ']' in element:
+                    element = element.replace(' ','')
+                    element = element.replace(']', ' ')
+                temp_cat += element
+            temp = temp_cat.split(' ')
+            temp_list=[]
+            for element in temp:
+                if element != '':
+                    temp_list.append(element)
+
+            final_list=[]
+            for element in temp_list:
+                if ':' in element:
+                    vec_temp = element.split(':')
+                    element = int(vec_temp[0]) - int(vec_temp[1]) + 1
+                final_list.append(element)
+
+            output_string = 'val '
+            if len(final_list) == 2:
+                output_string += final_list[1] + ' = '
+                if final_list[0] == 'input':
+                    output_string += 'Input(Bool())' + '   //' + line
+                else:
+                    output_string += 'Output(Bool())' + '   //' + line
+            elif len(final_list) == 3:
+                output_string += final_list[2] + ' = '
+                if final_list[0] == 'input':
+                    output_string += 'Input(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
+                else:
+                    output_string += 'Output(UInt(' + str(final_list[1]) + '.W))' + '   //' + line
+
+            portList.append(output_string)
+
+
+    if portList != []:
+        print('class '+className+' extends Bundle {')
+        for element in portList:
+            print(element.replace('\n',''))
+        print('}')
+
+'''
+IO_verilogToChiselV1 
+會自動將ports分成input與output兩個class
+且在各自的class內就將其宣告為Input與Output
+'''
+def IO_verilogToChiselV1():
     fileName = "verilogIO.txt"
     className = input('Please input the class name for Bundle : ')
 
@@ -10,7 +69,7 @@ def IO_verilogToChisel():
     inputList = []
     with open(fileName) as f:
         for line in f:
-            temp = line.replace('\n','').replace(',','').split('[')
+            temp = line.replace('\n','').replace(',','').replace(';','').split('[')
             temp_cat = ''
             for element in temp:
                 if ']' in element:
@@ -68,7 +127,7 @@ def IO_verilogToChisel():
     print('}')
 
 '''
-same as IO_verilogToChisel
+same as IO_verilogToChiselV1
 but the there is no Input or Output in the class
 
 It also remove s_ or m_ for the port of AXIlite
@@ -84,7 +143,7 @@ def IO_verilogToChiselV2():
     inputList = []
     with open(fileName) as f:
         for line in f:
-            temp = line.replace('\n','').replace(',','').split('[')
+            temp = line.replace('\n','').replace(';','').replace(',','').split('[')
             temp_cat = ''
             for element in temp:
                 if ']' in element:
@@ -154,7 +213,7 @@ def IO_verilogToChiselV2():
         print('val out = Output(new '+className+'_out)')
     print('}')
 
-def IO_verilogToChiselV2():
+def IO_verilogToChiselV3():
     fileName = "verilogIO.txt"
     className = input('Please input the class name for Bundle : ')
 
@@ -270,6 +329,8 @@ def shrinkPortNameForChiselBlockBox():
     output_f.close()
 
 if __name__ == '__main__':
-    #IO_verilogToChisel()
+    IO_verilogToChiselV0()
+    #IO_verilogToChiselV1()
     #IO_verilogToChiselV2()
-    shrinkPortNameForChiselBlockBox()
+    #IO_verilogToChiselV3()
+    #shrinkPortNameForChiselBlockBox()
